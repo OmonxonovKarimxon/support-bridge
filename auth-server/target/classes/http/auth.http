@@ -1,0 +1,23 @@
+POST localhost:8090/auth/register
+Content-Type: application/json
+
+{
+  "username": "john",
+  "email": "aliyev",
+  "password": "123"
+}
+
+###
+
+POST localhost:8090/auth/login
+Content-Type: application/json
+
+{
+  "username": "vali",
+  "password": "123"
+}
+
+###
+
+GET localhost:8090/auth/profile
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YWxpIiwiaWF0IjoxNjg1NjM1MDg5LCJleHAiOjE2ODU2MzY4ODl9.0SQmbYuTz8UKFpDfO9bIesOQy-6XZe82oVUiJy8vNTI

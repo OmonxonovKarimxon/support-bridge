@@ -1,0 +1,26 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: gateway-server
+
+  cloud:
+    gateway:
+      routes:
+        - id: question-service
+          uri: lb://question-service
+          predicates:
+            - Path=/question/**
+          filters:
+            - AuthenticationFilter
+
+        - id: auth-server
+          uri: lb://auth-server
+          predicates:
+            - Path=/auth/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
