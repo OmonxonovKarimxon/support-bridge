@@ -9,17 +9,11 @@
         <module name="config-server" />
         <module name="gateway-server" />
         <module name="discovery-server" />
+        <module name="tag-service" />
         <module name="question-service" />
         <module name="auth-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="auth-server" target="17" />
-      <module name="config-server" target="17" />
-      <module name="discovery-server" target="17" />
-      <module name="gateway-server" target="17" />
-      <module name="question-service" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -28,6 +22,7 @@
       <module name="discovery-server" options="-parameters" />
       <module name="gateway-server" options="-parameters" />
       <module name="question-service" options="-parameters" />
+      <module name="tag-service" options="-parameters" />
     </option>
   </component>
 </project>
