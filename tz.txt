@@ -1,0 +1,120 @@
+                                Tables
+
+1. User
+    id, username, email, password, created_at, updated_at, state.
+
+2. Profile
+    id, user_id, photo, some_link, created_at, updated_at, state.
+
+3. Questions
+    id, title, description, user_id, created_at, updated_at, state.
+
+4. Tags
+    id, name, created_at, updated_at, state.
+
+5. Question_tags
+    id, question_id, tag_id, created_at, updated_at, state.
+
+6. Answers
+    id, user_id, question_id, body, attachment_id, created_at, updated_at, state.
+
+7. Attachments
+    id, file_name, file_path, user_id, shared_id(question_id or answer_id or profile_id)
+
+8. Saved questions(Bookmarks)
+    id, user_id, question_id, created_at, updated_at, state.
+
+9. Comments
+    id, user_id, writing_id(question_id or answer_id), body, created_at, updated_at, state.
+
+10. Votes
+    id, user_id, voting_id(answer_id or question_id), vote_type(upvote or down vote), created_at, updated_at, state.
+
+
+                                Services
+
+1. Discovery service
+
+2. Config server service
+
+3. Gateway service
+
+4. User service
+
+5. Admin service
+
+6. Answer service
+
+7. Question service
+
+    1. Tagging
+    2. Voting
+    3. Saving
+
+8.Comment service
+
+                                Task list
+
+1. User service (User role)
+
+        Auth
+    1. Registration
+    2. Authorization
+
+        Profile
+    3. Change password
+    4. Update Email (with email verification)
+    5. Update Profile Detail(username)
+    6. Update Profile Attach (main_photo) (delete old attach)
+    7. Get Profile Detail (id,name,email,main_photo((url)))
+    8. Create Profile (ADMIN)
+
+2. Attach
+
+    1. Upload on profile - Download it - Delete (only owner & admin)
+    2. Upload on question - Download it - Delete (only owner & admin)
+    3. Upload on answer - Download it - Delete (only owner & admin)
+    4. Attach pagination (admin)
+    5. Delete attach (admin)
+
+3. Tag
+
+    1. Create
+    2. Update (admin)
+    3. Delete (admin)
+    4. List & by tag
+    5. Get question list by tag
+
+4. Question
+
+    1. Create (only logged in)
+    2. Update (admin & owner)
+    3. Delete (admin & owner)
+    4. List & byId
+    5. Get owner question list
+
+5. Answer
+
+    1. Write (only logged in)
+    2. Update (owner)
+    3. Delete (admin)
+    4. List & byId
+    5. Get owner answer list
+
+6. Save question
+
+    1. Save question (only logged in)
+    2. Remove question
+    3. List saved question
+
+7. Vote question
+
+    1. Up vote question (only logged in)
+    2. Down vote question
+
+8. Comment
+
+    1. Write comment (only logged in)
+    2. Update comment
+    3. Delete comment
+    4. Comment List
