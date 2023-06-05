@@ -8,6 +8,8 @@ class QuestionServiceApplicationTests {
 
     @Test
     void contextLoads() {
+        String ka = "hello wold"
     }
 
 }
+
