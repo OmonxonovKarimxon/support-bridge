@@ -4,9 +4,8 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/demo2
-    username: postgres
-    password: 5003
-  ##  password: root123
+    username: ${USERNAME}
+    password: ${PASSWORD}
 
   jpa:
     hibernate:
