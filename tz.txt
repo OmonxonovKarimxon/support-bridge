@@ -152,3 +152,5 @@
 15. Jahongir : learning new features (kafka, ....) and explain and managing project in a right way
 
 16. Micorservice part
+
+17.
