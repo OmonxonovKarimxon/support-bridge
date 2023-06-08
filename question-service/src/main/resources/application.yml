@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/support-bridge
+    username: postgres
+    password: 74809903
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
