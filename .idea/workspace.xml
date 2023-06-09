@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
+    <list default="true" id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="Tag usages added">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/AdviceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/exp/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/exp/ItemNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/tag/EditTagRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/tag/TagRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/tag/TagResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/TagServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/resources/https/tag.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/question-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/question-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/TagController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/TagEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/TagEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/TagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/TagService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,96 +37,169 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
-
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="ProjectId" id="2QlqKvAXGeNWldDwClrxx5BwRSz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectId" id="2QgSnCUafq0NQsV2gq9jjX1kwct" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "jahon",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "spring",
+    "spring.configuration.checksum": "ce06649110a0849bc852228d730a57e1",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.model.dto" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.exp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.QuestionServiceApplication">
-    <configuration name="AuthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="auth-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.AuthServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="tag | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/tag.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="config-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.ConfigServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="tag | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/tag.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="DiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="discovery-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.DiscoveryServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="tag | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/tag.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="GatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="gateway-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.GatewayServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="tag | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/tag.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="QuestionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="QuestionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="USERNAME" value="postgres" />
+        <env name="PASSWORD" value="root123" />
+      </envs>
       <module name="question-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.QuestionServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TagServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="tag-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.TagServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TagServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="tag-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.tagservice.TagServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.tag | #3" />
+      <item itemvalue="HTTP Request.tag | #4" />
+      <item itemvalue="HTTP Request.tag | #1" />
+      <item itemvalue="HTTP Request.tag | #2" />
+      <item itemvalue="Spring Boot.QuestionServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.QuestionServiceApplication" />
+        <item itemvalue="HTTP Request.tag | #3" />
+        <item itemvalue="HTTP Request.tag | #2" />
+        <item itemvalue="HTTP Request.tag | #4" />
+        <item itemvalue="HTTP Request.tag | #1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ba37af77-4be3-44f1-98e8-432d8c2b12e2" name="Changes" comment="" />
-      <created>1685773895644</created>
+      <changelist id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="" />
+      <created>1685938457605</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1685773895644</updated>
-      <workItem from="1685773896881" duration="817000" />
-      <workItem from="1685774850568" duration="713000" />
-
-    <option name="localTasksCounter" value="2" />
+      <updated>1685938457605</updated>
+      <workItem from="1685938461721" duration="2696000" />
+      <workItem from="1685943141179" duration="33000" />
+      <workItem from="1685948731352" duration="877000" />
+      <workItem from="1686269523008" duration="8445000" />
+    </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="application.yml" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tag usages added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tag usages added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/question-service/src/main/java/com/example/service/TagServiceImpl.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/question-service/src/main/java/com/example/service/TagServiceImpl.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

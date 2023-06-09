@@ -1,7 +1,20 @@
 package com.example.service;
 
-import org.springframework.stereotype.Service;
+import com.example.model.dto.tag.EditTagRequestDTO;
+import com.example.model.dto.tag.TagRequestDTO;
+import com.example.model.dto.tag.TagResponseDTO;
 
-@Service
-public class TagService {
+import java.util.List;
+
+public interface TagService {
+
+    TagResponseDTO add(TagRequestDTO addTagRequestDTO);
+
+    Integer edit(EditTagRequestDTO editTagRequestDTO);
+
+    Integer delete(int tagId);
+
+    List<TagResponseDTO> getAll();
+
+    TagResponseDTO getByName(String name);
 }

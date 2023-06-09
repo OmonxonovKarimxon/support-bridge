@@ -125,7 +125,7 @@
 
 2. Saidkarim : learning git and explain
 
-3. Jahongir : CRUD with tag-service
+3. Jahongir : CRUD with tag-service (+)
 
 4. Suxrob : CRUD with question-service
 
