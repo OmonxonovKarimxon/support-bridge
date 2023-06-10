@@ -16,19 +16,17 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "question")
+@Table(name = "saved_question")
 @DynamicInsert
-public class QuestionEntity {
+public class SavedQuestionEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String title;
+    private int questionId;
 
-    private String description;
-
-    private int ownerId;
+    private int userId;
 
     @Column(name = "state",columnDefinition = "boolean default true")
     private Boolean state;

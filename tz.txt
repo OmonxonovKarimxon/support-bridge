@@ -127,11 +127,11 @@
 
 3. Jahongir : CRUD with tag-service (+)
 
-4. Suxrob : CRUD with question-service
+4. Suxrob : CRUD with question-service (+)
 
 5. Saidkarim : CRUD with answer-service
 
-6. Jahongir : CRUD with save-question service
+6. Jahongir : CRUD with save-question service (+)
 
 7. Suxrob : CRUD with vote-question service
 

@@ -26,12 +26,12 @@ public class TagEntity {
     @Column(unique = true, nullable = false)
     private String name;
 
-    @Column(columnDefinition = "boolean default true")
+    @Column(name = "state",columnDefinition = "boolean default true")
     private Boolean state;
 
     @CreationTimestamp
-    private Timestamp created_at;
+    private Timestamp createdAt;
 
     @UpdateTimestamp
-    private Timestamp updated_at;
+    private Timestamp updatedAt;
 }
