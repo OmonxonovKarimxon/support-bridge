@@ -20,4 +20,4 @@ Content-Type: application/json
 ###
 
 GET localhost:8090/auth/profile
-Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YWxpIiwiaWF0IjoxNjg1NjM1MDg5LCJleHAiOjE2ODU2MzY4ODl9.0SQmbYuTz8UKFpDfO9bIesOQy-6XZe82oVUiJy8vNTI
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YWxpIiwiaWF0IjoxNjg2MzgxMjIxLCJleHAiOjE2ODY1OTcyMjF9.hn_SIO-MtkRcCtDVjT1aJvh6hczXuGMwfKTeCNgWKwM
