@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="Tag usages added">
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/QuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/question/QuestionAddDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/question/QuestionEditDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/question/QuestionResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/resources/https/question.http" afterDir="false" />
+    <list default="true" id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="Question service CRUD done">
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/SavedQuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/SavedQuestionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/SavedQuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/SavedQuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/SavedQuestionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/resources/https/saved-question.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/QuestionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/QuestionEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/QuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/TestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/TagEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/TagEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tz.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tz.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -89,17 +89,17 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.question | #3">
-    <configuration name="question | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/question.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="question | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/question.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.QuestionServiceApplication">
     <configuration name="question | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/question.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="question | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/question.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="saved-question | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/saved-question.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="saved-question | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/saved-question.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="QuestionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -125,19 +125,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.question | #1" />
-      <item itemvalue="HTTP Request.question | #2" />
+      <item itemvalue="HTTP Request.saved-question | #1" />
+      <item itemvalue="HTTP Request.saved-question | #2" />
       <item itemvalue="HTTP Request.question | #3" />
       <item itemvalue="HTTP Request.question | #4" />
       <item itemvalue="Spring Boot.QuestionServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.QuestionServiceApplication" />
+        <item itemvalue="HTTP Request.saved-question | #2" />
+        <item itemvalue="HTTP Request.saved-question | #1" />
         <item itemvalue="HTTP Request.question | #3" />
         <item itemvalue="HTTP Request.question | #4" />
-        <item itemvalue="HTTP Request.question | #1" />
-        <item itemvalue="Spring Boot.QuestionServiceApplication" />
-        <item itemvalue="HTTP Request.question | #2" />
       </list>
     </recent_temporary>
   </component>
@@ -153,8 +153,17 @@
       <workItem from="1685943141179" duration="33000" />
       <workItem from="1685948731352" duration="877000" />
       <workItem from="1686269523008" duration="8445000" />
-      <workItem from="1686334774037" duration="2279000" />
+      <workItem from="1686334774037" duration="3179000" />
+      <workItem from="1686377190989" duration="7427000" />
     </task>
+    <task id="LOCAL-00001" summary="Question service CRUD done">
+      <created>1686337230228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686337230228</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +185,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Tag usages added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tag usages added" />
+    <MESSAGE value="Question service CRUD done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Question service CRUD done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

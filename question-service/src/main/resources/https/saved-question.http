@@ -1,0 +1,7 @@
+POST http://localhost:8080/saved-question/save/2
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:8080/saved-question/remove/2
+Content-Type: application/json

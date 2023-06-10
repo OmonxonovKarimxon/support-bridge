@@ -28,7 +28,7 @@ public class QuestionServiceImpl implements QuestionService {
 
         return QuestionResponseDTO.builder()
                 .id(question.getId())
-                .created_at(question.getCreated_at())
+                .created_at(question.getCreatedAt())
                 .title(question.getTitle())
                 .ownerId(question.getOwnerId())
                 .description(question.getDescription())
@@ -60,7 +60,7 @@ public class QuestionServiceImpl implements QuestionService {
                             .description(question.getDescription())
                             .ownerId(question.getOwnerId())
                             .title(question.getTitle())
-                            .created_at(question.getCreated_at())
+                            .created_at(question.getCreatedAt())
                             .id(question.getId())
                     .build());
         }
