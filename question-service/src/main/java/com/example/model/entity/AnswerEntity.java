@@ -5,10 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicInsert;
-import org.hibernate.annotations.UpdateTimestamp;
 
+import java.sql.Time;
 import java.sql.Timestamp;
 
 @Data
@@ -23,20 +22,21 @@ public class AnswerEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(unique = true, nullable = false, name = "user_id")
+    @Column( nullable = false, name = "user_id")
     private Integer userId;
-    @Column(unique = true, nullable = false, name = "question_id")
+    @Column(nullable = false, name = "question_id")
     private Integer questionId;
-    @Column(unique = true, nullable = false)
+    @Column( nullable = false, name = "attachment_id")
+    private Integer attachmentId;
+    @Column( nullable = false)
     private String body;
 
     @Column(columnDefinition = "boolean default true")
     private Boolean state;
 
-    @CreationTimestamp
-    private Timestamp created_at;
-
-    @UpdateTimestamp
-    private Timestamp updated_at;
+    @Column
+    private Timestamp createdDate ;
+    @Column
+    private Timestamp updatedDate;
 }
  // id,user_id,question_id,body,attachment_id,created_at,updated_at,state.

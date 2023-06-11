@@ -19,9 +19,7 @@ public class TagController {
 
 
     @PostMapping("/add")
-    public ResponseEntity<TagResponseDTO> add(
-            @RequestBody TagRequestDTO addTagRequestDTO
-    ) {
+    public ResponseEntity<TagResponseDTO> add(@RequestBody TagRequestDTO addTagRequestDTO) {
 
         TagResponseDTO tag = tagService.add(addTagRequestDTO);
         return ResponseEntity.ok().body(tag);

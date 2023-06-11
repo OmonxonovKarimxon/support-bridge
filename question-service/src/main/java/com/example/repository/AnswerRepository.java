@@ -13,13 +13,13 @@ import java.util.List;
 
 public interface AnswerRepository extends JpaRepository<AnswerEntity, Integer> {
 
-    @Query("from AnswerEntity ")
+    @Query("from AnswerEntity answer where answer.state= true")
     Page<AnswerEntity> pagination(Pageable pageable);
 
-//    @Transactional
-//    @Modifying
-//    @Query("UPDATE  ReportEntity  set visible=false  where id=:reportId")
-//     void delete(Integer reportId);
+    @Transactional
+    @Modifying
+    @Query("update AnswerEntity answer set answer.state = false where answer.id = ?1")
+    Integer deleteByAnswerId(int id);
 
 
 
