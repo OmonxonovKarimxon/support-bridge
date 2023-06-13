@@ -129,7 +129,7 @@
 
 4. Suxrob : CRUD with question-service (+)
 
-5. Saidkarim : CRUD with answer-service
+5. Saidkarim : CRUD with answer-service (+)
 
 6. Jahongir : CRUD with save-question service (+)
 

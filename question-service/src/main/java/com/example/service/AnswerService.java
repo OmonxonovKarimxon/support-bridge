@@ -10,8 +10,8 @@ public interface AnswerService {
     String create (AnswerCreateDto dto);
      String update (AnswerUpdateDto dto, Integer answerId);
      String delete (Integer id);
-     Page<AnswerCreateDto> getListForUser (Integer pagenumber, Integer pageSize);
-     AnswerCreateDto getAnswerById (Integer id);
+     Page<AnswerUpdateDto> getListForUser (Integer pagenumber, Integer pageSize);
+    AnswerUpdateDto getAnswerById (Integer id);
     Page<AnswerFullInfoDto> getListForAdmin (Integer pagenumber, Integer pageSize);
 
 

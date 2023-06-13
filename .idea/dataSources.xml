@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/support-bridge</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="support-bridge@localhost [2]" uuid="1103b47b-856f-4ea1-8b90-c80d7bd78f37">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/support-bridge</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

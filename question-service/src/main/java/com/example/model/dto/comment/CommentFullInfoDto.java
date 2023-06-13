@@ -1,23 +1,22 @@
-package com.example.model.dto.answer;
+package com.example.model.dto.comment;
 
+import com.example.enums.CommentType;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.sql.Timestamp;
 
 
 @Getter
 @Setter
-public class AnswerFullInfoDto {
+public class CommentFullInfoDto {
     private Integer id;
     private Integer userId;
     private Integer questionId;
+    private Integer answerId;
     private  String body;
-    private Integer attachmentId;
+    private CommentType commentType;
     private String CreatedDate;
     private String UpdatedDate;
     private Boolean state;
 
 
-    // id, user_id, question_id, body, attachment_id,
 }

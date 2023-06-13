@@ -1,0 +1,31 @@
+POST http://localhost:8080/tag/add
+Content-Type: application/json
+
+{
+  "name" : "java"
+}
+
+###
+
+PUT http://localhost:8080/tag/update
+Content-Type: application/json
+
+{
+  "name": "node_js",
+  "oldTagId": 2
+}
+
+###
+
+DELETE http://localhost:8080/tag/delete/2
+Content-Type: application/json
+
+
+###
+
+GET http://localhost:8080/tag/all
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/tag/get/java

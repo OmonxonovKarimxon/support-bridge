@@ -1,14 +1,14 @@
-package com.example.model.dto.answer;
+package com.example.model.dto.comment;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class AnswerUpdateDto {
+public class CommentUpdateDto {
     private  Integer id;
     private Integer userId;
     private Integer questionId;
     private  String body;
-    private Integer attachmentId;
+    private Integer answerId;
 }

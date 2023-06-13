@@ -39,7 +39,7 @@ public class AnswerController {
     public ResponseEntity<?> reportList(@RequestParam(value = "page", defaultValue = "0") int page,
                                         @RequestParam(value = "size", defaultValue = "5") int size) {
 
-        Page<AnswerCreateDto> list = answerService.getListForUser(page, size);
+        Page<AnswerUpdateDto> list = answerService.getListForUser(page, size);
         return ResponseEntity.ok().body(list);
     }
 
@@ -53,7 +53,7 @@ public class AnswerController {
     @GetMapping("/getAnswerById/{AnswerId}")
     public ResponseEntity<?> getByUserId(@PathVariable("answerId") Integer answerId) {
 
-        AnswerCreateDto dto = answerService.getAnswerById(answerId);
+        AnswerUpdateDto dto = answerService.getAnswerById(answerId);
         return ResponseEntity.ok().body(dto);
     }
 

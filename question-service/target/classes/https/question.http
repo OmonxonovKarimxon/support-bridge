@@ -1,0 +1,29 @@
+POST http://localhost:8080/question/add
+Content-Type: application/json
+
+{
+  "title": "JDK setup",
+  "description": "it is not working"
+}
+
+###
+
+PUT http://localhost:8080/question/update
+Content-Type: application/json
+
+{
+  "newDescription": "for my new set up",
+  "newTitle": "Set up for mac os",
+  "questionId": 1
+}
+
+###
+
+DELETE http://localhost:8080/question/delete/1
+Content-Type: application/json
+
+
+###
+
+GET http://localhost:8080/question/all
+Content-Type: application/json
