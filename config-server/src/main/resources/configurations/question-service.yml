@@ -1,12 +1,11 @@
 server:
-  port: 8085
+port: 10000
 
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/support-bridge
     username: postgres
     password: 74809903
-  ##  password: root123
 
   jpa:
     hibernate:
