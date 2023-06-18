@@ -7,7 +7,6 @@ import com.example.form.AnswerForm;
 import com.example.model.dto.AnswerDto;
 import com.example.model.dto.answer.AnswerCreateDto;
 import com.example.model.dto.answer.AnswerFullInfoDto;
-import com.example.model.dto.answer.AnswerUpdateDto;
 import com.example.model.entity.AnswerEntity;
 import com.example.repository.AnswerRepository;
 import lombok.RequiredArgsConstructor;

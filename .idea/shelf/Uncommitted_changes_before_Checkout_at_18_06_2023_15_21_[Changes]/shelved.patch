@@ -1,0 +1,31 @@
+Index: auth-server/src/main/java/com/company/dto/UserAccountDto.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company.dto;\r\n\r\nimport com.fasterxml.jackson.annotation.JsonInclude;\r\nimport lombok.AllArgsConstructor;\r\nimport lombok.Getter;\r\nimport lombok.NoArgsConstructor;\r\nimport lombok.Setter;\r\n\r\nimport java.time.LocalDateTime;\r\n\r\n@Getter\r\n@Setter\r\n@AllArgsConstructor\r\n@NoArgsConstructor\r\n@JsonInclude(JsonInclude.Include.NON_NULL)\r\npublic class UserAccountDto {\r\n\r\n    private Integer id;\r\n    private String username;\r\n    private String email;\r\n    private LocalDateTime createdAt;\r\n\r\n}\r\n
+===================================================================
+diff --git a/auth-server/src/main/java/com/company/dto/UserAccountDto.java b/auth-server/src/main/java/com/company/dto/UserAccountDto.java
+--- a/auth-server/src/main/java/com/company/dto/UserAccountDto.java	
++++ b/auth-server/src/main/java/com/company/dto/UserAccountDto.java	
+@@ -1,6 +1,6 @@
+ package com.company.dto;
+ 
+-import com.fasterxml.jackson.annotation.JsonInclude;
++import com.company.enums.Role;
+ import lombok.AllArgsConstructor;
+ import lombok.Getter;
+ import lombok.NoArgsConstructor;
+@@ -12,12 +12,11 @@
+ @Setter
+ @AllArgsConstructor
+ @NoArgsConstructor
+-@JsonInclude(JsonInclude.Include.NON_NULL)
+ public class UserAccountDto {
+ 
+     private Integer id;
+     private String username;
+     private String email;
+-    private LocalDateTime createdAt;
+-
++    private LocalDateTime createdDate;
++    private Role role;
+ }
