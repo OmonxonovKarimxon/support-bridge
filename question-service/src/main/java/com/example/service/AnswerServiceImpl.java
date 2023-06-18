@@ -74,11 +74,11 @@ public class AnswerServiceImpl implements AnswerService {
     }
 
     @Override
-    public Page<AnswerUpdateDto> getListForUser(Integer pagenumber, Integer pageSize) {
+    public Page<AnswerCreateDto> getListForUser(Integer pagenumber, Integer pageSize) {
         Pageable pageable = PageRequest.of(pagenumber, pageSize);
 
         Page<AnswerEntity> pagination = answerRepository.pagination(pageable);
-        List<AnswerUpdateDto> dtoList = new LinkedList<>();
+        List<AnswerCreateDto> dtoList = new LinkedList<>();
         pagination.getContent().forEach(answerEntity -> {
             dtoList.add(entityToDto(answerEntity));
         });
@@ -87,7 +87,7 @@ public class AnswerServiceImpl implements AnswerService {
 
 
     @Override
-    public AnswerUpdateDto getAnswerById(Integer id) {
+    public AnswerCreateDto getAnswerById(Integer id) {
         Optional<AnswerEntity> entity = answerRepository.findById(id);
         return entityToDto(entity.get());
     }
@@ -107,15 +107,14 @@ public class AnswerServiceImpl implements AnswerService {
             dto.setId(answerEntity.getId());
             dto.setCreatedDate(String.valueOf(answerEntity.getCreatedDate()));
             dto.setUpdatedDate(String.valueOf(answerEntity.getUpdatedDate()));
-            dto.setState(answerEntity.getState());
             dtoList.add(dto);
         });
         return new PageImpl(dtoList, pageable, pagination.getTotalElements());
     }
 
 
-    private AnswerUpdateDto entityToDto(AnswerEntity answerEntity) {
-        AnswerUpdateDto dto = new AnswerUpdateDto();
+    private AnswerCreateDto entityToDto(AnswerEntity answerEntity) {
+        AnswerCreateDto dto = new AnswerCreateDto();
         dto.setUserId(answerEntity.getUserId());
         dto.setBody(answerEntity.getBody());
         dto.setAttachmentId(answerEntity.getAttachmentId());

@@ -16,7 +16,6 @@ public class AnswerFullInfoDto {
     private Integer attachmentId;
     private String CreatedDate;
     private String UpdatedDate;
-    private Boolean state;
 
 
     // id, user_id, question_id, body, attachment_id,
