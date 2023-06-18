@@ -1,6 +1,7 @@
 package com.company.service;
 
 import com.company.config.JwtService;
+import com.company.dto.UserAccountDto;
 import com.company.dto.UserDto;
 import com.company.entity.UserEntity;
 import com.company.enums.Role;
@@ -49,9 +50,20 @@ public class AuthServiceImpl implements AuthService {
     }
 
     @Override
-    public UserDto getUser(String username) {
+    public UserAccountDto getUser(String username) {
         Optional<UserEntity> opt = repository.findByUsernameAndStateIsTrue(username);
-        return map(opt.get());
+        if (opt.isPresent()) {
+            UserEntity entity = opt.get();
+
+            UserAccountDto dto = new UserAccountDto();
+
+            dto.setId(entity.getId());
+            dto.setUsername(entity.getUsername());
+            dto.setEmail(entity.getEmail());
+            dto.setCreatedAt(entity.getCreateAt());
+            return dto;
+        }
+        return null;
     }
 
 

@@ -1,6 +1,7 @@
 package com.company.controller;
 
 import com.company.config.JwtService;
+import com.company.dto.UserAccountDto;
 import com.company.dto.UserDto;
 import com.company.entity.UserEntity;
 import com.company.exp.BadRequestException;
@@ -58,9 +59,8 @@ public class AuthController {
 
 
     @GetMapping("/profile")
-    public ResponseEntity<UserDto> getUserProfile(@RequestHeader("Authorization") String authHeader) {
-        String username = jwtService.extractUsername(authHeader);
-
+    public ResponseEntity<UserAccountDto> getUserProfile(@RequestHeader("Authorization") String authHeader) {
+        String username = jwtService.extractUsername(authHeader.substring(7));
         return ResponseEntity.ok(service.getUser(username));
     }
 
