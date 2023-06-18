@@ -20,7 +20,7 @@
       <module name="auth-server" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
-      <module name="gateway-server" options="-parameters" />
+      <module name="gateway-server" options="" />
       <module name="question-service" options="-parameters" />
       <module name="tag-service" options="-parameters" />
     </option>
