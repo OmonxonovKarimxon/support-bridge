@@ -41,7 +41,7 @@ public class CommentServiceImpl implements CommentService {
         entity.setOwnerId(dto.getOwnerId());
         entity.setState(true);
         commentRepository.save(entity);
-        return "Successfully";
+        return "Successfully oka ";
     }
 
     @Override
