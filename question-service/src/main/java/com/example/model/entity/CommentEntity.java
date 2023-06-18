@@ -6,9 +6,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -16,30 +16,32 @@ import java.sql.Timestamp;
 @Builder
 @Entity
 @Table(name = "comment")
-@DynamicInsert
+@DynamicUpdate
 public class CommentEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column( nullable = false, name = "user_id")
+
+    @Column( nullable = false, updatable = false)
     private Integer userId;
-    @Column( name = "question_id")
-    private Integer questionId;
-    @Column(  name = "answer_id")
-    private Integer answerId;
-    @Column( nullable = false)
-    private String body;
-    @Column(name = "types", nullable = false)
+
+    @Column(nullable = false, updatable = false)
+    private Integer ownerId;
+
+    @Column(name = "types", nullable = false, updatable = false)
     @Enumerated(EnumType.STRING)
     private CommentType commentType;
 
-    @Column(columnDefinition = "boolean default true")
+    @Column(nullable = false)
+    private String body;
+
+    @Column
     private Boolean state;
 
     @Column
-    private Timestamp createdDate ;
+    private LocalDateTime createdDate;
     @Column
-    private Timestamp updatedDate;
+    private LocalDateTime updatedDate;
 }
  //id, user_id, writing_id(question_id or answer_id), body, created_at, updated_at, state.

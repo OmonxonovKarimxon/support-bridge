@@ -1,31 +1,30 @@
-POST localhost:8080/comment/create
+POST localhost:8080/comment
 Content-Type: application/json
 
 {
   "userId": 2,
-  "questionId": 1,
+  "ownerId": 10,
   "body": "qale zormi",
   "type": "ANSWER"
 }
 
 ###
 
-PUT localhost:8080/answer/update/1
+PUT localhost:8080/comment/2
 Content-Type: application/json
 
 {
-  "userId": 2,
-  "questionId": 1,
+  "ownerId": 3,
   "body": "alalalla",
-  "attachmentId": 2
+  "commentType": "ANSWER"
 }
 ###
-DELETE localhost:8080/answer/deleteById/1
+DELETE localhost:8080/comment/1
 
 
 ###
-GET localhost:8080/answer/answerList
+GET localhost:8080/comment/answerList
 Content-Type: application/json
 
 ###
-GET localhost:8080/answer/paginationAdmin?page=1&size=3
+GET localhost:8080/comment/2

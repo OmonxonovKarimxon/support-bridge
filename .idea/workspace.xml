@@ -4,69 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="write code in work">
-      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_06_2023_11_50_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_06_2023_11_50_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_06_2023_11_50__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2023_15_52_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2023_15_52_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2023_15_52__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2023_15_52__Changes_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_10_33_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_10_33__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_06_2023_10_57__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/enums/CommentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/comment/CommentCreateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/comment/CommentFullInfoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/comment/CommentUpdateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/CommentEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/controller/AdviceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/controller/QuestionController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/controller/TagController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/exp/BadRequestException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/exp/ItemNotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/question/QuestionAddDTO$QuestionAddDTOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/question/QuestionAddDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/question/QuestionEditDTO$QuestionEditDTOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/question/QuestionEditDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/question/QuestionResponseDTO$QuestionResponseDTOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/question/QuestionResponseDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/tag/EditTagRequestDTO$EditTagRequestDTOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/tag/EditTagRequestDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/tag/TagRequestDTO$TagRequestDTOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/tag/TagRequestDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/tag/TagResponseDTO$TagResponseDTOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/tag/TagResponseDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/QuestionEntity$QuestionEntityBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/QuestionEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/TagEntity$TagEntityBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/TagEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/repository/QuestionRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/repository/TagRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/service/TagService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/service/TagServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/https/question.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/target/classes/https/tag.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="restore commentss">
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/form/CommentForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/UserAccountDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/comment/CommentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_06_2023_11_50__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_06_2023_11_50__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2023_15_52__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2023_15_52__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2023_15_52__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_06_2023_15_52__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_10_33__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_10_33__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_06_2023_10_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_06_2023_10_57__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/question-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/question-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/AnswerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/answer/AnswerCreateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/answer/AnswerCreateDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/answer/AnswerFullInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/answer/AnswerFullInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/answer/AnswerUpdateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/answer/AnswerUpdateDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/comment/CommentCreateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/comment/CommentCreateDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/comment/CommentUpdateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/comment/CommentUpdateDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/CommentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/AnswerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/AnswerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/QuestionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/AnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/AnswerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/AnswerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/AnswerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tz.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tz.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/repository/QuestionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/repository/QuestionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -122,33 +87,17 @@
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/SAIDKARIMXON/IdeaProjects/support-bridge/question-service/src/main/resources/https",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "b50316cbb1e6a475fe0e3621cd93123c",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
-    ]
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.example.model.dto.question" />
       <recent name="com.example.model.dto" />
+      <recent name="com.example.model.dto.question" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\SAIDKARIMXON\IdeaProjects\support-bridge\question-service\src\main\resources\https" />
@@ -169,17 +118,17 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.comment | #1">
-    <configuration name="answer | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/answer.http" requestIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.comment | #2">
+    <configuration name="comment | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="answer | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/answer.http" index="3" requestIdentifier="#3" runType="Run single request">
+    <configuration name="comment | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="answer | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/answer.http" index="5" requestIdentifier="#5" runType="Run single request">
+    <configuration name="comment | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="comment | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" requestIdentifier="#1" runType="Run single request">
+    <configuration name="comment | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="5" requestIdentifier="#5" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="AuthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -190,12 +139,7 @@
       </method>
     </configuration>
     <configuration name="QuestionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="USERNAME" value="postgres" />
-        <env name="PASSWORD" value="5003" />
-      </envs>
       <module name="question-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.QuestionServiceApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.*" />
@@ -207,6 +151,11 @@
         <option name="region" />
         <option name="useCurrentConnection" value="false" />
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.QuestionServiceApplication" />
+      <envs>
+        <env name="USERNAME" value="postgres" />
+        <env name="PASSWORD" value="5003" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -219,21 +168,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.comment | #1" />
-      <item itemvalue="HTTP Request.answer | #1" />
-      <item itemvalue="HTTP Request.answer | #3" />
-      <item itemvalue="HTTP Request.answer | #5" />
       <item itemvalue="Spring Boot.AuthServerApplication" />
       <item itemvalue="Spring Boot.TagServiceApplication" />
       <item itemvalue="Spring Boot.QuestionServiceApplication" />
+      <item itemvalue="HTTP Request.comment | #2" />
+      <item itemvalue="HTTP Request.comment | #3" />
+      <item itemvalue="HTTP Request.comment | #4" />
+      <item itemvalue="HTTP Request.comment | #5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.comment | #1" />
+        <item itemvalue="HTTP Request.comment | #2" />
         <item itemvalue="Spring Boot.QuestionServiceApplication" />
-        <item itemvalue="HTTP Request.answer | #5" />
-        <item itemvalue="HTTP Request.answer | #1" />
-        <item itemvalue="HTTP Request.answer | #3" />
+        <item itemvalue="HTTP Request.comment | #5" />
+        <item itemvalue="HTTP Request.comment | #4" />
+        <item itemvalue="HTTP Request.comment | #3" />
       </list>
     </recent_temporary>
   </component>
@@ -282,34 +231,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentServiceImpl.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentServiceImpl.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentServiceImpl.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentServiceImpl.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentServiceImpl.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentServiceImpl.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/question-service/src/main/java/com/example/service/AnswerServiceImpl.java</url>
+          <line>133</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

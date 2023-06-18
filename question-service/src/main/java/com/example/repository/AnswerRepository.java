@@ -10,6 +10,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface AnswerRepository extends JpaRepository<AnswerEntity, Integer> {
 
@@ -22,6 +23,7 @@ public interface AnswerRepository extends JpaRepository<AnswerEntity, Integer> {
     Integer deleteByAnswerId(int id);
 
 
+    Optional<AnswerEntity> findByIdAndStateIsTrue(Integer id);
 
 }
 

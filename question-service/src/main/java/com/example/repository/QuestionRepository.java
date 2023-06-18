@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface QuestionRepository extends JpaRepository<QuestionEntity, Integer> {
 
@@ -22,4 +23,6 @@ public interface QuestionRepository extends JpaRepository<QuestionEntity, Intege
 
     @Query("select question from QuestionEntity question where question.state = true")
     List<QuestionEntity> getAll();
+
+    Optional<QuestionEntity> findByIdAndStateIsTrue(Integer id);
 }

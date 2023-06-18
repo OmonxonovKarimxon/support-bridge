@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.exp.ItemNotFoundException;
 import com.example.model.dto.question.QuestionAddDTO;
 import com.example.model.dto.question.QuestionEditDTO;
 import com.example.model.dto.question.QuestionResponseDTO;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -66,5 +68,14 @@ public class QuestionServiceImpl implements QuestionService {
         }
 
         return resList;
+    }
+
+    @Override
+    public QuestionEntity get(Integer id) {
+        Optional<QuestionEntity> opt = questionRepository.findByIdAndStateIsTrue(id);
+        if (opt.isEmpty()){
+            throw new ItemNotFoundException("Something went wrong");
+        }
+        return opt.get();
     }
 }

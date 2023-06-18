@@ -2,67 +2,117 @@ package com.example.service;
 
 
 import com.example.enums.CommentType;
+import com.example.exp.ItemNotFoundException;
 import com.example.model.dto.comment.CommentCreateDto;
-import com.example.model.dto.comment.CommentFullInfoDto;
+import com.example.model.dto.comment.CommentDto;
 import com.example.model.dto.comment.CommentUpdateDto;
 import com.example.model.entity.CommentEntity;
 import com.example.repository.CommentRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 
 @Service
+@RequiredArgsConstructor
 public class CommentServiceImpl implements CommentService {
 
     private final CommentRepository commentRepository;
-
-    public CommentServiceImpl(CommentRepository commentRepository) {
-        this.commentRepository = commentRepository;
-    }
-
+    private final AnswerService answerService;
+    private final QuestionService questionService;
 
     @Override
     public String create(CommentCreateDto dto) {
         CommentEntity entity = new CommentEntity();
         entity.setBody(dto.getBody());
-        entity.setQuestionId(dto.getQuestionId());
         entity.setUserId(dto.getUserId());
-        entity.setCreatedDate(new Timestamp(System.currentTimeMillis()));
-
-        if(dto.getType().equals(CommentType.QUESTION)){
-            entity.setCommentType(dto.getType());
-        }else {
-            entity.setCommentType(dto.getType());
-        }
-
+        entity.setCreatedDate(LocalDateTime.now());
+        entity.setCommentType(dto.getType());
+        entity.setOwnerId(dto.getOwnerId());
+        entity.setState(true);
         commentRepository.save(entity);
         return "Successfully";
     }
 
     @Override
-    public String update(CommentUpdateDto dto, Integer answerId) {
-        return null;
+    public String update(CommentUpdateDto dto, Integer commentId) {
+
+        if (dto.getCommentType().equals(CommentType.ANSWER)) {
+            answerService.get(dto.getOwnerId());
+        } else {
+            questionService.get(dto.getOwnerId());
+        }
+
+        Optional<CommentEntity> byId = commentRepository.findByIdAndStateIsTrue(commentId);
+
+        if (byId.isPresent()) {
+            CommentEntity entity = byId.get();
+            entity.setBody(dto.getBody());
+            entity.setUpdatedDate(LocalDateTime.now());
+
+            commentRepository.save(entity);
+
+            return "successfullly updated";
+        }
+        return "not found";
     }
 
     @Override
     public String delete(Integer id) {
-        return null;
+
+        Optional<CommentEntity> byId = commentRepository.findByIdAndStateIsTrue(id);
+        if (byId.isPresent()) {
+            CommentEntity entity = byId.get();
+            entity.setState(false);
+            commentRepository.save(entity);
+            return "deleted";
+        }
+        throw new ItemNotFoundException("Not found");
     }
 
     @Override
-    public Page<CommentUpdateDto> getListForUser(Integer pagenumber, Integer pageSize) {
-        return null;
+    public Page<CommentDto> getListForUser(Integer pagenumber, Integer pageSize) {
+
+        Pageable pageable = PageRequest.of(pagenumber, pageSize);
+
+        Page<CommentEntity> pagination = commentRepository.pagination(pageable);
+
+        List<CommentDto> collect = pagination.stream().map(this::map).collect(Collectors.toList());
+        return new PageImpl<>(collect, pageable, pagination.getTotalElements());
     }
 
     @Override
-    public CommentUpdateDto getAnswerById(Integer id) {
-        return null;
+    public CommentDto getComment(Integer id) {
+        return map(get(id));
     }
 
-    @Override
-    public Page<CommentFullInfoDto> getListForAdmin(Integer pagenumber, Integer pageSize) {
-        return null;
+    // HELPER
+    private CommentEntity get(Integer id) {
+        Optional<CommentEntity> opt = commentRepository.findByIdAndStateIsTrue(id);
+        if (opt.isPresent()) {
+            return opt.get();
+        }
+        throw new ItemNotFoundException("Not found");
     }
+
+    // MAPPER
+    private CommentDto map(CommentEntity entity) {
+        CommentDto dto = new CommentDto();
+        dto.setId(entity.getId());
+        dto.setBody(entity.getBody());
+        dto.setOwnerId(entity.getOwnerId());
+        dto.setCommentType(entity.getCommentType());
+        dto.setCreatedDate(entity.getCreatedDate());
+        return dto;
+    }
+
 }

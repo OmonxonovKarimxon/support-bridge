@@ -10,10 +10,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
+import java.util.Optional;
+
 public interface CommentRepository extends JpaRepository<CommentEntity, Integer> {
 
     @Query("from CommentEntity comment where comment.state= true")
-    Page<AnswerEntity> pagination(Pageable pageable);
+    Page<CommentEntity> pagination(Pageable pageable);
 
     @Transactional
     @Modifying
@@ -21,7 +23,7 @@ public interface CommentRepository extends JpaRepository<CommentEntity, Integer>
     Integer deleteByCommentId(int id);
 
 
-
+    Optional<CommentEntity> findByIdAndStateIsTrue(Integer commentId);
 }
 
 

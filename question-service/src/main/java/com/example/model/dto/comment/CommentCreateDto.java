@@ -10,9 +10,8 @@ import lombok.Setter;
 public class CommentCreateDto {
 
     private Integer userId;
-    private Integer questionId;
     private String body;
-    private Integer answerId;
+    private Integer ownerId;
 
     private CommentType type;
 

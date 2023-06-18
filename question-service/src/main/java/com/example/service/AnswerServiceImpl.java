@@ -2,6 +2,7 @@ package com.example.service;
 
 
 import com.example.exp.BadRequestException;
+import com.example.exp.ItemNotFoundException;
 import com.example.model.dto.answer.AnswerCreateDto;
 import com.example.model.dto.answer.AnswerFullInfoDto;
 import com.example.model.dto.answer.AnswerUpdateDto;
@@ -21,6 +22,7 @@ import java.util.Optional;
 
 @Service
 public class AnswerServiceImpl implements AnswerService {
+
     private final AnswerRepository answerRepository;
 
 
@@ -44,22 +46,16 @@ public class AnswerServiceImpl implements AnswerService {
     @Override
     public String update(AnswerUpdateDto dto, Integer answerId) {
 
-        Optional<AnswerEntity> byId = answerRepository.findById(answerId);
-        AnswerEntity entity = answerRepository.findById(answerId).get();
+        AnswerEntity entity = get(answerId);
 
-        if (!byId.isPresent() && entity.getState()) {
-            throw new BadRequestException("answer not found");
-        }
+            entity.setAttachmentId(dto.getAttachmentId());
+            entity.setBody(dto.getBody());
+            entity.setUserId(dto.getUserId());
+            entity.setQuestionId(dto.getQuestionId());
+            entity.setUpdatedDate(new Timestamp(System.currentTimeMillis()));
+            answerRepository.save(entity);
 
-        entity.setAttachmentId(dto.getAttachmentId());
-        entity.setBody(dto.getBody());
-        entity.setUserId(dto.getUserId());
-        entity.setQuestionId(dto.getQuestionId());
-        entity.setUpdatedDate(new Timestamp(System.currentTimeMillis()));
-        answerRepository.save(entity);
-
-
-        return "successfullly updated";
+            return "successfullly updated";
     }
 
     @Override
@@ -86,7 +82,7 @@ public class AnswerServiceImpl implements AnswerService {
         pagination.getContent().forEach(answerEntity -> {
             dtoList.add(entityToDto(answerEntity));
         });
-        return new PageImpl(dtoList, pageable, pagination.getTotalElements());
+        return new PageImpl<>(dtoList, pageable, pagination.getTotalElements());
     }
 
 
@@ -128,5 +124,13 @@ public class AnswerServiceImpl implements AnswerService {
         return dto;
     }
 
+    @Override
+    public AnswerEntity get(Integer id){
+        Optional<AnswerEntity> opt = answerRepository.findByIdAndStateIsTrue(id);
+        if (opt.isEmpty()){
+            throw new ItemNotFoundException("Kalla bunaqa Answer yo'qku");
+        }
+        return opt.get();
+    }
 
 }
