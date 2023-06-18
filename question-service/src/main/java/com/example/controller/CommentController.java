@@ -1,28 +1,23 @@
 package com.example.controller;
 
 
-import com.example.model.dto.answer.AnswerCreateDto;
-import com.example.model.dto.comment.CommentCreateDto;
+import com.example.form.CommentForm;
 import com.example.model.dto.comment.CommentDto;
-import com.example.model.dto.comment.CommentFullInfoDto;
-import com.example.model.dto.comment.CommentUpdateDto;
 import com.example.service.CommentService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/comment")
+@RequiredArgsConstructor
 public class CommentController {
     private final CommentService commentService;
 
-    public CommentController(CommentService commentService) {
-        this.commentService = commentService;
-    }
-
 
     @PostMapping
-    public ResponseEntity<String> create(@RequestBody CommentCreateDto dto) {
+    public ResponseEntity<String> create(@RequestBody CommentForm dto) {
 
         String response = commentService.create(dto);
         return ResponseEntity.ok().body(response);
@@ -30,7 +25,7 @@ public class CommentController {
 
     @PutMapping("/{commentId}")
     public ResponseEntity<String> update(@PathVariable("commentId") Integer commentId,
-                                         @RequestBody CommentUpdateDto dto) {
+                                         @RequestBody CommentForm dto) {
 
         String response = commentService.update(dto, commentId);
         return ResponseEntity.ok().body(response);
@@ -44,7 +39,8 @@ public class CommentController {
         Page<CommentDto> list = commentService.getListForUser(page, size);
         return ResponseEntity.ok().body(list);
     }
-//
+
+    //
     @DeleteMapping("/{commentId}")
     public ResponseEntity<?> deleteById(@PathVariable("commentId") Integer commentId) {
 

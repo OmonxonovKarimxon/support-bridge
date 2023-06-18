@@ -3,6 +3,7 @@ package com.example.service;
 
 import com.example.enums.CommentType;
 import com.example.exp.ItemNotFoundException;
+import com.example.form.CommentForm;
 import com.example.model.dto.comment.CommentCreateDto;
 import com.example.model.dto.comment.CommentDto;
 import com.example.model.dto.comment.CommentUpdateDto;
@@ -31,12 +32,12 @@ public class CommentServiceImpl implements CommentService {
     private final QuestionService questionService;
 
     @Override
-    public String create(CommentCreateDto dto) {
+    public String create(CommentForm dto) {
         CommentEntity entity = new CommentEntity();
         entity.setBody(dto.getBody());
-        entity.setUserId(dto.getUserId());
+        entity.setUserId(dto.getAccountDto().getId());
         entity.setCreatedDate(LocalDateTime.now());
-        entity.setCommentType(dto.getType());
+        entity.setCommentType(dto.getCommentTypes());
         entity.setOwnerId(dto.getOwnerId());
         entity.setState(true);
         commentRepository.save(entity);
@@ -44,9 +45,11 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    public String update(CommentUpdateDto dto, Integer commentId) {
+    public String update(CommentForm dto, Integer commentId) {
 
-        if (dto.getCommentType().equals(CommentType.ANSWER)) {
+        //TODO userId ni tekshirish kerak
+
+        if (dto.getCommentTypes().equals(CommentType.ANSWER)) {
             answerService.get(dto.getOwnerId());
         } else {
             questionService.get(dto.getOwnerId());

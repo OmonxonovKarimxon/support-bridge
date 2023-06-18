@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.form.CommentForm;
 import com.example.model.dto.comment.CommentCreateDto;
 import com.example.model.dto.comment.CommentDto;
 import com.example.model.dto.comment.CommentUpdateDto;
@@ -7,9 +8,9 @@ import org.springframework.data.domain.Page;
 
 public interface CommentService {
 
-    String create(CommentCreateDto dto);
+    String create(CommentForm dto);
 
-    String update(CommentUpdateDto dto, Integer commentId);
+    String update(CommentForm dto, Integer commentId);
 
     String delete(Integer id);
 
