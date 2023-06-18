@@ -4,8 +4,13 @@ package com.example.controller;
 import com.example.model.dto.question.QuestionAddDTO;
 import com.example.model.dto.question.QuestionEditDTO;
 import com.example.model.dto.question.QuestionResponseDTO;
+import com.example.model.dto.user.UserAccountDto;
+import com.example.proxy.AuthProxy;
+import com.example.service.QuestionService;
 import com.example.service.QuestionServiceImpl;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,6 +22,8 @@ import java.util.List;
 public class QuestionController {
 
     private final QuestionServiceImpl questionService;
+//    private final QuestionService questionServices;
+
 
     @PostMapping("/add")
     public ResponseEntity<QuestionResponseDTO> add(
@@ -54,5 +61,11 @@ public class QuestionController {
     public ResponseEntity<List<QuestionResponseDTO>> getAll() {
 
         return ResponseEntity.ok().body(questionService.getAll());
+    }
+
+
+    @GetMapping("/profile")
+    public UserAccountDto getCurrentUser(@RequestHeader("Authorization") String authHeader) {
+        return questionService.gett(authHeader);
     }
 }

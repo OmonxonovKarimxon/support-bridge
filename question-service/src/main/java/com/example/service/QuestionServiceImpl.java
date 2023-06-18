@@ -3,7 +3,9 @@ package com.example.service;
 import com.example.model.dto.question.QuestionAddDTO;
 import com.example.model.dto.question.QuestionEditDTO;
 import com.example.model.dto.question.QuestionResponseDTO;
+import com.example.model.dto.user.UserAccountDto;
 import com.example.model.entity.QuestionEntity;
+import com.example.proxy.AuthProxy;
 import com.example.repository.QuestionRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -16,7 +18,7 @@ import java.util.List;
 public class QuestionServiceImpl implements QuestionService {
 
     private final QuestionRepository questionRepository;
-
+    private final AuthProxy authProxy;
     @Override
     public QuestionResponseDTO add(QuestionAddDTO questionAddDTO) {
 
@@ -66,5 +68,9 @@ public class QuestionServiceImpl implements QuestionService {
         }
 
         return resList;
+    }
+
+    public UserAccountDto gett(String token) {
+        return authProxy.getUserProfile(token).getBody();
     }
 }
