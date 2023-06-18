@@ -4,7 +4,9 @@ import com.example.exp.ItemNotFoundException;
 import com.example.model.dto.question.QuestionAddDTO;
 import com.example.model.dto.question.QuestionEditDTO;
 import com.example.model.dto.question.QuestionResponseDTO;
+import com.example.model.dto.user.UserAccountDto;
 import com.example.model.entity.QuestionEntity;
+import com.example.proxy.AuthProxy;
 import com.example.repository.QuestionRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -70,12 +72,15 @@ public class QuestionServiceImpl implements QuestionService {
         return resList;
     }
 
+
     @Override
     public QuestionEntity get(Integer id) {
         Optional<QuestionEntity> opt = questionRepository.findByIdAndStateIsTrue(id);
-        if (opt.isEmpty()){
+        if (opt.isEmpty()) {
             throw new ItemNotFoundException("Something went wrong");
         }
         return opt.get();
+
     }
 }
+
