@@ -6,7 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class AnswerUpdateDto {
-    private  Integer id;
     private Integer userId;
     private Integer questionId;
     private  String body;
