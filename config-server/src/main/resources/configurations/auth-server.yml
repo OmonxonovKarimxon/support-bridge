@@ -3,14 +3,14 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/demo2
+    url: jdbc:postgresql://localhost:5432/support-bridge
     username: postgres
-    password: 5003
+    password: 74809903
   ##  password: root123
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     show-sql: true
 
 eureka:
