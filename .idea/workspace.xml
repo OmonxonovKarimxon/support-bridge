@@ -168,13 +168,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.AuthServerApplication" />
-      <item itemvalue="Spring Boot.TagServiceApplication" />
-      <item itemvalue="Spring Boot.QuestionServiceApplication" />
       <item itemvalue="HTTP Request.comment | #2" />
       <item itemvalue="HTTP Request.comment | #3" />
       <item itemvalue="HTTP Request.comment | #4" />
       <item itemvalue="HTTP Request.comment | #5" />
+      <item itemvalue="Spring Boot.AuthServerApplication" />
+      <item itemvalue="Spring Boot.TagServiceApplication" />
+      <item itemvalue="Spring Boot.QuestionServiceApplication" />
     </list>
     <recent_temporary>
       <list>
