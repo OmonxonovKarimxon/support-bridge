@@ -1,0 +1,19 @@
+Index: question-service/src/test/java/com/example/questionservice/QuestionServiceApplicationTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.questionservice;\n\nimport org.junit.jupiter.api.Test;\nimport org.springframework.boot.test.context.SpringBootTest;\n\n@SpringBootTest\nclass QuestionServiceApplicationTests {\n\n    @Test\n    void contextLoads() {\n        String ka = \"hello wold\"\n    }\n\n}\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/question-service/src/test/java/com/example/questionservice/QuestionServiceApplicationTests.java b/question-service/src/test/java/com/example/questionservice/QuestionServiceApplicationTests.java
+--- a/question-service/src/test/java/com/example/questionservice/QuestionServiceApplicationTests.java	(revision ad1d0ee812705484e3af01272b623b87f6784037)
++++ b/question-service/src/test/java/com/example/questionservice/QuestionServiceApplicationTests.java	(date 1687002928484)
+@@ -8,7 +8,7 @@
+ 
+     @Test
+     void contextLoads() {
+-        String ka = "hello wold"
++        String ka = "hello wold";
+     }
+ 
+ }
