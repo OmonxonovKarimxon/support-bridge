@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="Tag usages added">
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/QuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/question/QuestionAddDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/question/QuestionEditDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/question/QuestionResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/question-service/src/main/resources/https/question.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/QuestionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/QuestionEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/QuestionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/TestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/resources/http/auth.http" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/resources/http/auth.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/target/classes/http/auth.http" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/target/classes/http/auth.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/auth-server.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/auth-server.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/question-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/question-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/classes/configurations/auth-server.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/configurations/auth-server.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/classes/configurations/gateway-server.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/configurations/gateway-server.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-server/target/classes/com/company/filter/RouteValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-server/target/classes/com/company/filter/RouteValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/proxy/AuthProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/proxy/AuthProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/resources/http/question.http" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/resources/http/question.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/controller/BaseController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;jahon&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;coder&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -64,7 +66,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ce06649110a0849bc852228d730a57e1&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3271048aa622b76554b02b497e215adf&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -89,17 +91,17 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.question | #3">
-    <configuration name="question | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/question.http" requestIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.question | #1">
+    <configuration name="auth | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/auth-server/src/main/resources/http/auth.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="question | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/question.http" index="2" requestIdentifier="#2" runType="Run single request">
+    <configuration name="auth | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/auth-server/src/main/resources/http/auth.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="question | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/http/question.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="question | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/question.http" index="3" requestIdentifier="#3" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="question | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/question.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="QuestionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -125,19 +127,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.auth | #2" />
+      <item itemvalue="HTTP Request.auth | #3" />
       <item itemvalue="HTTP Request.question | #1" />
-      <item itemvalue="HTTP Request.question | #2" />
       <item itemvalue="HTTP Request.question | #3" />
-      <item itemvalue="HTTP Request.question | #4" />
       <item itemvalue="Spring Boot.QuestionServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.question | #3" />
-        <item itemvalue="HTTP Request.question | #4" />
         <item itemvalue="HTTP Request.question | #1" />
         <item itemvalue="Spring Boot.QuestionServiceApplication" />
-        <item itemvalue="HTTP Request.question | #2" />
+        <item itemvalue="HTTP Request.auth | #3" />
+        <item itemvalue="HTTP Request.auth | #2" />
+        <item itemvalue="HTTP Request.question | #3" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +156,7 @@
       <workItem from="1685948731352" duration="877000" />
       <workItem from="1686269523008" duration="8445000" />
       <workItem from="1686334774037" duration="2279000" />
+      <workItem from="1687148537170" duration="1084000" />
     </task>
     <servers />
   </component>

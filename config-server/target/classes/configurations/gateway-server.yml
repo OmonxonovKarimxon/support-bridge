@@ -12,8 +12,8 @@ spring:
           uri: lb://question-service
           predicates:
             - Path=/question/**
-          filters:
-            - AuthenticationFilter
+#          filters:
+#            - AuthenticationFilter
 
         - id: auth-server
           uri: lb://auth-server

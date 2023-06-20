@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 @FeignClient(name = "auth-server")
 public interface AuthProxy {
 
-    @GetMapping("/profile")
+    @GetMapping("/auth/profile")
     ResponseEntity<UserAccountDto> getUserProfile(@RequestHeader(value = "Authorization") String authorizationHeader);
 
 }
