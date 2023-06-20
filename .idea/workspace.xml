@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="Set up feign">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/QuestionServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/controller/BaseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +70,11 @@
     "RequestMappingsPanelWidth1": "75",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "jahon",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
     "spring.configuration.checksum": "ce06649110a0849bc852228d730a57e1",
     "vue.rearranger.settings.migration": "true"
   }
@@ -181,6 +181,8 @@
       <workItem from="1686483764437" duration="383000" />
       <workItem from="1686484376533" duration="404000" />
       <workItem from="1687278156146" duration="227000" />
+      <workItem from="1687278387547" duration="278000" />
+      <workItem from="1687278671743" duration="1149000" />
     </task>
     <servers />
   </component>
