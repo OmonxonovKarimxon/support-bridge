@@ -1,16 +1,17 @@
-package com.example.model.dto.question;
+package com.example.form;
 
+import com.example.dto.UserAccountDto;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-@Builder
-public class QuestionAddDTO {
+public class QuestionForm {
 
     private String title;
     private String description;
+
+    private UserAccountDto account;
 }

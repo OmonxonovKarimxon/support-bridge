@@ -4,11 +4,82 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="Tag usages added" />
-=======
-    <list default="true" id="e847faf1-5d0a-415b-a055-5148faa1583c" name="Changes" comment="bekzod" />
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
+    <list default="true" id="6375c559-4743-4e13-962a-2e7398d30368" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/dto/PagingDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/dto/QuestionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/dto/QuestionParamsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/form/QuestionForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113539.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113547.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113852.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113854.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113903.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113904.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113905.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113906.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113907.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113909.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113910.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113914.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113918.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113919.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113921.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113923.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113924.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113926.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113932.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T113943.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121237.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121238.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121239.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121249.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121250.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121251.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121252.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121255.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121305.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121610.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121618-1.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121618.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121620.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121621.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121623.503.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121624.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-06-16T121826.200.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/src/main/resources/http/auth.http" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/src/main/resources/http/auth.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-server/target/classes/http/auth.http" beforeDir="false" afterPath="$PROJECT_DIR$/auth-server/target/classes/http/auth.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/auth-server.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/auth-server.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/target/classes/configurations/auth-server.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/target/classes/configurations/auth-server.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/controller/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/question/QuestionAddDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/question/QuestionEditDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/question/QuestionResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/QuestionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/model/entity/QuestionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/repository/QuestionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/src/main/resources/http/question.http" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/src/main/resources/http/question.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/controller/BaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/controller/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/question/QuestionResponseDTO$QuestionResponseDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/model/dto/question/QuestionResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/QuestionEntity$QuestionEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/QuestionEntity$QuestionEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/QuestionEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/QuestionEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/TagEntity$TagEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/TagEntity$TagEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/TagEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/model/entity/TagEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/repository/QuestionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/repository/QuestionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/com/example/service/QuestionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/com/example/service/TestService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/http/question.http" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/http/question.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question-service/target/classes/https/question.http" beforeDir="false" afterPath="$PROJECT_DIR$/question-service/target/classes/https/question.http" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,10 +94,8 @@
     </option>
   </component>
   <component name="Git.Settings">
-<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-=======
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="commentAdd" />
@@ -48,21 +117,7 @@
     <setting file="file://$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/comment/CommentCreateDto.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
-      </map>
-    </option>
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,54 +127,34 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-<<<<<<< HEAD
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "coder",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "spring",
     "spring.configuration.checksum": "3271048aa622b76554b02b497e215adf",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
-    ]
-=======
-    "node.js.selected.package.tslint": "(autodetect)"
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-<<<<<<< HEAD
+      <recent name="com.example.dto" />
       <recent name="com.example.model.dto.question" />
       <recent name="com.example.model.dto" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.exp" />
-=======
-      <recent name="com.example.model.dto" />
-      <recent name="com.example.form" />
-      <recent name="com.example.model.dto.question" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\SAIDKARIMXON\IdeaProjects\support-bridge\question-service\src\main\resources\https" />
@@ -131,7 +166,6 @@
       <recent name="com.example.model.entity" />
       <recent name="com.example.repository" />
       <recent name="com.example.service" />
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
     </key>
   </component>
   <component name="RunDashboard">
@@ -141,8 +175,7 @@
       </set>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="HTTP Request.question | #1">
+  <component name="RunManager" selected="HTTP Request.question | #2">
     <configuration name="auth | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/auth-server/src/main/resources/http/auth.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -152,40 +185,10 @@
     <configuration name="question | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/http/question.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="question | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/question.http" index="3" requestIdentifier="#3" runType="Run single request">
+    <configuration name="question | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/http/question.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="QuestionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="USERNAME" value="postgres" />
-        <env name="PASSWORD" value="root123" />
-=======
-  <component name="RunManager" selected="Spring Boot.QuestionServiceApplication">
-    <configuration name="comment | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="2" requestIdentifier="#2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="comment | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="3" requestIdentifier="#3" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="comment | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="4" requestIdentifier="#4" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="comment | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="5" requestIdentifier="#5" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="AuthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="auth-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.AuthServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuestionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <envs>
-        <env name="USERNAME" value="postgres" />
-        <env name="PASSWORD" value="5003" />
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
-      </envs>
+    <configuration name="QuestionServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="question-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.QuestionServiceApplication" />
       <extension name="coverage">
@@ -194,175 +197,34 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
-        <option name="credential" />
-        <option name="region" />
-        <option name="useCurrentConnection" value="false" />
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <list>
-      <item itemvalue="HTTP Request.auth | #2" />
-      <item itemvalue="HTTP Request.auth | #3" />
-      <item itemvalue="HTTP Request.question | #1" />
-      <item itemvalue="HTTP Request.question | #3" />
-=======
-    <configuration name="TagServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="tag-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.tagservice.TagServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="HTTP Request.comment | #2" />
-      <item itemvalue="HTTP Request.comment | #3" />
-      <item itemvalue="HTTP Request.comment | #4" />
-      <item itemvalue="HTTP Request.comment | #5" />
-      <item itemvalue="Spring Boot.AuthServerApplication" />
-      <item itemvalue="Spring Boot.TagServiceApplication" />
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
-      <item itemvalue="Spring Boot.QuestionServiceApplication" />
-    </list>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
+        <item itemvalue="Spring Boot.QuestionServiceApplication (1)" />
+        <item itemvalue="HTTP Request.question | #2" />
         <item itemvalue="HTTP Request.question | #1" />
-        <item itemvalue="Spring Boot.QuestionServiceApplication" />
         <item itemvalue="HTTP Request.auth | #3" />
         <item itemvalue="HTTP Request.auth | #2" />
-        <item itemvalue="HTTP Request.question | #3" />
-=======
-        <item itemvalue="HTTP Request.comment | #2" />
-        <item itemvalue="Spring Boot.QuestionServiceApplication" />
-        <item itemvalue="HTTP Request.comment | #5" />
-        <item itemvalue="HTTP Request.comment | #4" />
-        <item itemvalue="HTTP Request.comment | #3" />
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-      <changelist id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="" />
-=======
-      <changelist id="e847faf1-5d0a-415b-a055-5148faa1583c" name="Changes" comment="add authProxy 01" />
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
-      <created>1685938457605</created>
+      <changelist id="6375c559-4743-4e13-962a-2e7398d30368" name="Changes" comment="" />
+      <created>1687342514564</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1685938457605</updated>
-      <workItem from="1685938461721" duration="2696000" />
-      <workItem from="1685943141179" duration="33000" />
-      <workItem from="1685948731352" duration="877000" />
-      <workItem from="1686269523008" duration="8445000" />
-      <workItem from="1686334774037" duration="2279000" />
-<<<<<<< HEAD
-      <workItem from="1687148537170" duration="1084000" />
-      <workItem from="1687241947964" duration="378000" />
+      <updated>1687342514564</updated>
+      <workItem from="1687342515815" duration="7793000" />
     </task>
-=======
-      <workItem from="1686479736693" duration="1748000" />
-      <workItem from="1686483764437" duration="383000" />
-      <workItem from="1686484376533" duration="404000" />
-      <workItem from="1686649981394" duration="11399000" />
-      <workItem from="1687087934716" duration="1392000" />
-      <workItem from="1687089355755" duration="371000" />
-      <workItem from="1687089800756" duration="600000" />
-    </task>
-    <task id="LOCAL-00001" summary="commented by Sukhrob">
-      <created>1687077754573</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1687077754573</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add authProxy">
-      <created>1687083899955</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1687083899955</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add authProxy 01">
-      <created>1687085895446</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1687085895446</updated>
-    </task>
-    <task id="LOCAL-00004" summary="bekzod">
-      <created>1687091254439</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1687091254439</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="application.yml" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-<<<<<<< HEAD
-    <option name="TAB_STATES">
-      <map>
-=======
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="5979bb4a-3440-4496-b71b-78ea33f11118" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="5979bb4a-3440-4496-b71b-78ea33f11118">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="structure">
-                    <value>
-                      <list>
-                        <option value="dir:C:/MyAllProject/support-bridge/question-service/src/main/java/com/example/proxy" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-            </State>
-          </value>
-        </entry>
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tag usages added" />
-<<<<<<< HEAD
-    <option name="LAST_COMMIT_MESSAGE" value="Tag usages added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -377,27 +239,21 @@
           <line>60</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionServiceImpl.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-=======
-    <MESSAGE value="commented by Sukhrob" />
-    <MESSAGE value="add authProxy" />
-    <MESSAGE value="add authProxy 01" />
-    <MESSAGE value="bekzod" />
-    <option name="LAST_COMMIT_MESSAGE" value="bekzod" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
-<<<<<<< HEAD
-=======
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/support_bridge$QuestionServiceApplication.ic" NAME="QuestionServiceApplication Coverage Results" MODIFIED="1686898033485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.example.*</FILTER>
     </SUITE>
->>>>>>> ec407483f6aee4b8446867eba26014d76d454560
   </component>
 </project>

@@ -1,21 +1,24 @@
 package com.example.service;
 
-import com.example.model.dto.question.QuestionAddDTO;
-import com.example.model.dto.question.QuestionEditDTO;
-import com.example.model.dto.question.QuestionResponseDTO;
+import com.example.dto.PagingDto;
+import com.example.dto.QuestionDto;
+import com.example.dto.QuestionParamsDto;
+import com.example.form.QuestionForm;
 import com.example.model.entity.QuestionEntity;
 
 import java.util.List;
 
 public interface QuestionService {
 
-    QuestionResponseDTO add(QuestionAddDTO questionAddDTO);
+    PagingDto<QuestionDto> getByParams(QuestionParamsDto params);
 
-    int edit(QuestionEditDTO questionEditDTO);
+    QuestionDto add(QuestionForm form);
 
-    int delete(int id);
+    QuestionDto edit(QuestionForm form);
 
-    List<QuestionResponseDTO> getAll();
+    void delete(Integer id);
 
-    QuestionEntity get(Integer id);
+    QuestionEntity get(Integer questionId, Integer userId);
+
+    QuestionEntity getById(Integer questionId);
 }

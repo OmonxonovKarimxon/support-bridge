@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.sql.Timestamp;
@@ -17,7 +18,7 @@ import java.sql.Timestamp;
 @Builder
 @Entity
 @Table(name = "question")
-@DynamicInsert
+@DynamicUpdate
 public class QuestionEntity {
 
     @Id
@@ -30,7 +31,7 @@ public class QuestionEntity {
 
     private int ownerId;
 
-    @Column(name = "state",columnDefinition = "boolean default true")
+    @Column
     private Boolean state;
 
     @CreationTimestamp
