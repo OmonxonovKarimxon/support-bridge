@@ -22,4 +22,5 @@ public interface QuestionRepository extends JpaRepository<QuestionEntity, Intege
 
     @Query("select question from QuestionEntity question where question.state = true")
     List<QuestionEntity> getAll();
+
 }

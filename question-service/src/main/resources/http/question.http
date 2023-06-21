@@ -1,0 +1,6 @@
+GET localhost:8090/question/question
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YWxpIiwiaWF0IjoxNjg2MzgxNjk0LCJleHAiOjE2ODY1OTc2OTR9.Mwjnn9E4lJELxfIipCG5H8Clhicjn2RwE1mjl-brTYE
+
+###
+
+GET localhost:8090/question/pub/question

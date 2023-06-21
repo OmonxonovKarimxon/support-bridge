@@ -1,6 +1,5 @@
 package com.example.proxy;
 
-
 import com.example.model.dto.user.UserAccountDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
@@ -15,3 +14,4 @@ public interface AuthProxy {
     ResponseEntity<UserAccountDto> getUserProfile(@RequestHeader(value = "Authorization") String authorizationHeader);
 
 }
+

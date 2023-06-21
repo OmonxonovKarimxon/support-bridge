@@ -1,4 +1,5 @@
 spring:
+
   datasource:
     url: jdbc:postgresql://localhost:5432/support-bridge
     username: postgres
@@ -8,3 +9,10 @@ spring:
     hibernate:
       ddl-auto: create
     show-sql: true
+
+  config:
+    import: optional:configserver:http://localhost:8888
+
+  application:
+    name: question-service
+

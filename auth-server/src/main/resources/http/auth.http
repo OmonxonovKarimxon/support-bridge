@@ -20,4 +20,8 @@ Content-Type: application/json
 ###
 
 GET localhost:8090/auth/profile
+<<<<<<< HEAD
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNjg3MDI0NDc4LCJleHAiOjE2ODcwMjYyNzh9.XSGb2qlxFun4w4tdkEXrTeyXF45jK2i1IK4yjgtB6D0
+=======
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YWxpIiwiaWF0IjoxNjg2MzgxNjk0LCJleHAiOjE2ODY1OTc2OTR9.Mwjnn9E4lJELxfIipCG5H8Clhicjn2RwE1mjl-brTYE
+>>>>>>> coder

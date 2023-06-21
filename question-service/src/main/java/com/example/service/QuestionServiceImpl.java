@@ -19,6 +19,7 @@ public class QuestionServiceImpl implements QuestionService {
 
     private final QuestionRepository questionRepository;
     private final AuthProxy authProxy;
+
     @Override
     public QuestionResponseDTO add(QuestionAddDTO questionAddDTO) {
 
@@ -59,11 +60,11 @@ public class QuestionServiceImpl implements QuestionService {
         for (QuestionEntity question : all) {
 
             resList.add(QuestionResponseDTO.builder()
-                            .description(question.getDescription())
-                            .ownerId(question.getOwnerId())
-                            .title(question.getTitle())
-                            .created_at(question.getCreatedAt())
-                            .id(question.getId())
+                    .description(question.getDescription())
+                    .ownerId(question.getOwnerId())
+                    .title(question.getTitle())
+                    .created_at(question.getCreatedAt())
+                    .id(question.getId())
                     .build());
         }
 
