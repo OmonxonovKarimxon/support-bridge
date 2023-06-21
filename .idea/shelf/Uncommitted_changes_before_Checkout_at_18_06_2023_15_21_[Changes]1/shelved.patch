@@ -1,0 +1,76 @@
+Index: auth-server/src/main/java/com/company/service/AuthServiceImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company.service;\r\n\r\nimport com.company.config.JwtService;\r\nimport com.company.dto.UserAccountDto;\r\nimport com.company.dto.UserDto;\r\nimport com.company.entity.UserEntity;\r\nimport com.company.enums.Role;\r\nimport com.company.form.LoginForm;\r\nimport com.company.form.UserForm;\r\nimport com.company.repository.UserRepository;\r\nimport lombok.RequiredArgsConstructor;\r\nimport org.springframework.security.crypto.password.PasswordEncoder;\r\nimport org.springframework.stereotype.Service;\r\n\r\nimport java.time.LocalDateTime;\r\nimport java.util.Optional;\r\n\r\n@Service\r\n@RequiredArgsConstructor\r\npublic class AuthServiceImpl implements AuthService {\r\n\r\n    private final UserRepository repository;\r\n    private final JwtService jwtService;\r\n    private final PasswordEncoder passwordEncoder;\r\n\r\n    @Override\r\n    public UserDto saveUser(UserForm form) {\r\n        UserEntity entity = new UserEntity();\r\n\r\n        entity.setUsername(form.getUsername());\r\n        entity.setEmail(form.getEmail());\r\n        entity.setPassword(passwordEncoder.encode(form.getPassword()));\r\n        entity.setRole(Role.ROLE_USER);\r\n        entity.setCreateAt(LocalDateTime.now());\r\n        entity.setState(true);\r\n\r\n        repository.save(entity);\r\n        return map(entity);\r\n    }\r\n\r\n\r\n    @Override\r\n    public UserDto login(LoginForm form) {\r\n        String jwt = jwtService.generateToken(form.getUsername());\r\n\r\n        UserDto dto = new UserDto();\r\n        dto.setUsername(form.getUsername());\r\n        dto.setJwt(jwt);\r\n        return dto;\r\n    }\r\n\r\n    @Override\r\n    public UserAccountDto getUser(String username) {\r\n        Optional<UserEntity> opt = repository.findByUsernameAndStateIsTrue(username);\r\n        if (opt.isPresent()) {\r\n            UserEntity entity = opt.get();\r\n\r\n            UserAccountDto dto = new UserAccountDto();\r\n\r\n            dto.setId(entity.getId());\r\n            dto.setUsername(entity.getUsername());\r\n            dto.setEmail(entity.getEmail());\r\n            dto.setCreatedAt(entity.getCreateAt());\r\n            return dto;\r\n        }\r\n        return null;\r\n    }\r\n\r\n\r\n    // MAPPER\r\n    private UserDto map(UserEntity entity) {\r\n        UserDto dto = new UserDto();\r\n        dto.setId(entity.getId());\r\n        dto.setUsername(entity.getUsername());\r\n        dto.setEmail(entity.getEmail());\r\n        dto.setCreatedAt(entity.getCreateAt());\r\n        return dto;\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-server/src/main/java/com/company/service/AuthServiceImpl.java b/auth-server/src/main/java/com/company/service/AuthServiceImpl.java
+--- a/auth-server/src/main/java/com/company/service/AuthServiceImpl.java	
++++ b/auth-server/src/main/java/com/company/service/AuthServiceImpl.java	
+@@ -5,6 +5,7 @@
+ import com.company.dto.UserDto;
+ import com.company.entity.UserEntity;
+ import com.company.enums.Role;
++import com.company.exp.ItemNotFoundException;
+ import com.company.form.LoginForm;
+ import com.company.form.UserForm;
+ import com.company.repository.UserRepository;
+@@ -66,6 +67,22 @@
+         return null;
+     }
+ 
++    @Override
++    public UserAccountDto getUserAccount(String username) {
++        Optional<UserEntity> opt = repository.findByUsernameAndStateIsTrue(username);
++        if (opt.isEmpty()) {
++            throw new ItemNotFoundException("JWT is wrong");
++        }
++        UserEntity entity = opt.get();
++        UserAccountDto dto = new UserAccountDto();
++        dto.setId(entity.getId());
++        dto.setUsername(entity.getUsername());
++        dto.setEmail(entity.getEmail());
++        dto.setCreatedDate(entity.getCreateAt());
++        dto.setRole(entity.getRole());
++        return dto;
++    }
++
+ 
+     // MAPPER
+     private UserDto map(UserEntity entity) {
+Index: auth-server/src/main/java/com/company/service/AuthService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company.service;\r\n\r\nimport com.company.dto.UserAccountDto;\r\nimport com.company.dto.UserDto;\r\nimport com.company.form.LoginForm;\r\nimport com.company.form.UserForm;\r\n\r\npublic interface AuthService {\r\n\r\n    UserDto saveUser(UserForm form);\r\n\r\n    UserDto login(LoginForm form);\r\n\r\n    UserAccountDto getUser(String username);\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-server/src/main/java/com/company/service/AuthService.java b/auth-server/src/main/java/com/company/service/AuthService.java
+--- a/auth-server/src/main/java/com/company/service/AuthService.java	
++++ b/auth-server/src/main/java/com/company/service/AuthService.java	
+@@ -13,4 +13,5 @@
+ 
+     UserAccountDto getUser(String username);
+ 
++    UserAccountDto getUserAccount(String username);
+ }
+Index: auth-server/src/main/java/com/company/config/JwtService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company.config;\r\n\r\nimport io.jsonwebtoken.Claims;\r\nimport io.jsonwebtoken.Jwts;\r\nimport io.jsonwebtoken.SignatureAlgorithm;\r\nimport io.jsonwebtoken.io.Decoders;\r\nimport io.jsonwebtoken.security.Keys;\r\nimport org.springframework.security.core.userdetails.UserDetails;\r\nimport org.springframework.stereotype.Component;\r\n\r\nimport java.security.Key;\r\nimport java.util.Date;\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\nimport java.util.function.Function;\r\n\r\n@Component\r\npublic class JwtService {\r\n\r\n    private static final String SECRET_KEY = \"6250655367566B5970337336763979244226452948404D635166546A576D5A71\";\r\n\r\n    public String extractUsername(String token) {\r\n        return extractClaim(token, Claims::getSubject);\r\n    }\r\n\r\n    public Date extractExpiration(String token) {\r\n        return extractClaim(token, Claims::getExpiration);\r\n    }\r\n\r\n    public <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {\r\n        final Claims claims = extractAllClaims(token);\r\n        return claimsResolver.apply(claims);\r\n    }\r\n\r\n    private Claims extractAllClaims(String token) {\r\n        return Jwts\r\n                .parserBuilder()\r\n                .setSigningKey(getSignKey())\r\n                .build()\r\n                .parseClaimsJws(token)\r\n                .getBody();\r\n    }\r\n\r\n    private Boolean isTokenExpired(String token) {\r\n        return extractExpiration(token).before(new Date());\r\n    }\r\n\r\n    public Boolean validateToken(String token, UserDetails userDetails) {\r\n        final String username = extractUsername(token);\r\n        return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));\r\n    }\r\n\r\n    public String generateToken(String username) {\r\n        Map<String, Object> claims = new HashMap<>();\r\n        return createToken(claims, username);\r\n    }\r\n\r\n    private String createToken(Map<String, Object> claims, String username) {\r\n        return Jwts.builder()\r\n                .setClaims(claims)\r\n                .setSubject(username)\r\n                .setIssuedAt(new Date(System.currentTimeMillis()))\r\n                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60 * 60))\r\n                .signWith(getSignKey(), SignatureAlgorithm.HS256).compact();\r\n\r\n    }\r\n\r\n    private Key getSignKey() {\r\n        byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY);\r\n        return Keys.hmacShaKeyFor(keyBytes);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/auth-server/src/main/java/com/company/config/JwtService.java b/auth-server/src/main/java/com/company/config/JwtService.java
+--- a/auth-server/src/main/java/com/company/config/JwtService.java	
++++ b/auth-server/src/main/java/com/company/config/JwtService.java	
+@@ -17,7 +17,7 @@
+ @Component
+ public class JwtService {
+ 
+-    private static final String SECRET_KEY = "6250655367566B5970337336763979244226452948404D635166546A576D5A71";
++    private static final String SECRET_KEY = "5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437";
+ 
+     public String extractUsername(String token) {
+         return extractClaim(token, Claims::getSubject);

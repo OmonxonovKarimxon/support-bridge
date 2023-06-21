@@ -1,0 +1,30 @@
+POST localhost:8080/answer/create
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "questionId": 1,
+  "body": "qale zormi",
+  "attachmentId": 2
+}
+###
+
+PUT localhost:8080/answer/update/1
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "questionId": 1,
+  "body": "alalalla",
+  "attachmentId": 2
+}
+###
+DELETE localhost:8080/answer/deleteById/1
+
+
+###
+GET localhost:8080/answer/answerList
+Content-Type: application/json
+
+###
+GET localhost:8080/answer/paginationAdmin?page=1&size=3

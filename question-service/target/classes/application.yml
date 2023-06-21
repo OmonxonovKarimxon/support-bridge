@@ -1,7 +1,19 @@
 spring:
+<<<<<<< HEAD
   config:
     import: optional:configserver:http://localhost:8888
 
   application:
     name: question-service
 
+=======
+  datasource:
+    url: jdbc:postgresql://localhost:5432/support-bridge
+    username: postgres
+    password: 5003
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560

@@ -14,4 +14,3 @@ public interface AuthProxy {
     ResponseEntity<UserAccountDto> getUserProfile(@RequestHeader(value = "Authorization") String authorizationHeader);
 
 }
-

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="Tag usages added" />
+=======
+    <list default="true" id="e847faf1-5d0a-415b-a055-5148faa1583c" name="Changes" comment="bekzod" />
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,13 +17,52 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+=======
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="commentAdd" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/comment/CommentDto.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/question-service/src/main/java/com/example/service/QuestionService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/question-service/src/main/java/com/example/model/dto/comment/CommentCreateDto.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -34,6 +77,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -59,15 +103,35 @@
     "DatabaseDriversLRU": [
       "postgresql"
     ]
+=======
+    "node.js.selected.package.tslint": "(autodetect)"
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+<<<<<<< HEAD
       <recent name="com.example.model.dto.question" />
       <recent name="com.example.model.dto" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.exp" />
+=======
+      <recent name="com.example.model.dto" />
+      <recent name="com.example.form" />
+      <recent name="com.example.model.dto.question" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SAIDKARIMXON\IdeaProjects\support-bridge\question-service\src\main\resources\https" />
+      <recent name="C:\Users\SAIDKARIMXON\IdeaProjects\support-bridge\question-service\src\main\java\com\example\model\dto\comment" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.model.dto.answer" />
+      <recent name="com.example.form" />
+      <recent name="com.example.model.entity" />
+      <recent name="com.example.repository" />
+      <recent name="com.example.service" />
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
     </key>
   </component>
   <component name="RunDashboard">
@@ -77,6 +141,7 @@
       </set>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="HTTP Request.question | #1">
     <configuration name="auth | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/auth-server/src/main/resources/http/auth.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
@@ -94,6 +159,32 @@
       <envs>
         <env name="USERNAME" value="postgres" />
         <env name="PASSWORD" value="root123" />
+=======
+  <component name="RunManager" selected="Spring Boot.QuestionServiceApplication">
+    <configuration name="comment | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="comment | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="comment | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="comment | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/question-service/src/main/resources/https/comment.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.AuthServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="USERNAME" value="postgres" />
+        <env name="PASSWORD" value="5003" />
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
       </envs>
       <module name="question-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.QuestionServiceApplication" />
@@ -112,27 +203,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <list>
       <item itemvalue="HTTP Request.auth | #2" />
       <item itemvalue="HTTP Request.auth | #3" />
       <item itemvalue="HTTP Request.question | #1" />
       <item itemvalue="HTTP Request.question | #3" />
+=======
+    <configuration name="TagServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tag-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.tagservice.TagServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.comment | #2" />
+      <item itemvalue="HTTP Request.comment | #3" />
+      <item itemvalue="HTTP Request.comment | #4" />
+      <item itemvalue="HTTP Request.comment | #5" />
+      <item itemvalue="Spring Boot.AuthServerApplication" />
+      <item itemvalue="Spring Boot.TagServiceApplication" />
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
       <item itemvalue="Spring Boot.QuestionServiceApplication" />
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="HTTP Request.question | #1" />
         <item itemvalue="Spring Boot.QuestionServiceApplication" />
         <item itemvalue="HTTP Request.auth | #3" />
         <item itemvalue="HTTP Request.auth | #2" />
         <item itemvalue="HTTP Request.question | #3" />
+=======
+        <item itemvalue="HTTP Request.comment | #2" />
+        <item itemvalue="Spring Boot.QuestionServiceApplication" />
+        <item itemvalue="HTTP Request.comment | #5" />
+        <item itemvalue="HTTP Request.comment | #4" />
+        <item itemvalue="HTTP Request.comment | #3" />
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="a78b6ac9-7fbd-4057-8bf7-613e6c6101e2" name="Changes" comment="" />
+=======
+      <changelist id="e847faf1-5d0a-415b-a055-5148faa1583c" name="Changes" comment="add authProxy 01" />
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
       <created>1685938457605</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -142,9 +262,49 @@
       <workItem from="1685948731352" duration="877000" />
       <workItem from="1686269523008" duration="8445000" />
       <workItem from="1686334774037" duration="2279000" />
+<<<<<<< HEAD
       <workItem from="1687148537170" duration="1084000" />
       <workItem from="1687241947964" duration="378000" />
     </task>
+=======
+      <workItem from="1686479736693" duration="1748000" />
+      <workItem from="1686483764437" duration="383000" />
+      <workItem from="1686484376533" duration="404000" />
+      <workItem from="1686649981394" duration="11399000" />
+      <workItem from="1687087934716" duration="1392000" />
+      <workItem from="1687089355755" duration="371000" />
+      <workItem from="1687089800756" duration="600000" />
+    </task>
+    <task id="LOCAL-00001" summary="commented by Sukhrob">
+      <created>1687077754573</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687077754573</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add authProxy">
+      <created>1687083899955</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687083899955</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add authProxy 01">
+      <created>1687085895446</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687085895446</updated>
+    </task>
+    <task id="LOCAL-00004" summary="bekzod">
+      <created>1687091254439</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687091254439</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,8 +314,43 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="application.yml" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+<<<<<<< HEAD
     <option name="TAB_STATES">
       <map>
+=======
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="5979bb4a-3440-4496-b71b-78ea33f11118" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="5979bb4a-3440-4496-b71b-78ea33f11118">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/MyAllProject/support-bridge/question-service/src/main/java/com/example/proxy" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
         <entry key="MAIN">
           <value>
             <State />
@@ -166,6 +361,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Tag usages added" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="Tag usages added" />
   </component>
   <component name="XDebuggerManager">
@@ -183,9 +379,25 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+=======
+    <MESSAGE value="commented by Sukhrob" />
+    <MESSAGE value="add authProxy" />
+    <MESSAGE value="add authProxy 01" />
+    <MESSAGE value="bekzod" />
+    <option name="LAST_COMMIT_MESSAGE" value="bekzod" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+<<<<<<< HEAD
+=======
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/support_bridge$QuestionServiceApplication.ic" NAME="QuestionServiceApplication Coverage Results" MODIFIED="1686898033485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.*</FILTER>
+    </SUITE>
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560
   </component>
 </project>

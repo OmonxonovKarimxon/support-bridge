@@ -13,11 +13,13 @@ POST localhost:8090/auth/login
 Content-Type: application/json
 
 {
-  "username": "vali",
+  "username": "john",
   "password": "123"
 }
 
 ###
 
 GET localhost:8090/auth/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YWxpIiwiaWF0IjoxNjg2ODk5NTc0LCJleHAiOjE2ODcxMTU1NzR9.4mvWKrkEcExaWWNBQ3Y4CIJ72Ul_boT31CMXgR2I2pk
+
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNjg3MDI0NDc4LCJleHAiOjE2ODcwMjYyNzh9.XSGb2qlxFun4w4tdkEXrTeyXF45jK2i1IK4yjgtB6D0
+>>>>>>> ec407483f6aee4b8446867eba26014d76d454560

@@ -104,7 +104,7 @@
 6. Save question
 
     1. Save question (only logged in)
-    2. Remove question
+    2. Remove saved question
     3. List saved question
 
 7. Vote question
@@ -118,3 +118,39 @@
     2. Update comment
     3. Delete comment
     4. Comment List
+
+                                Our tasks
+
+1. Suxrob : configuring servers and set up security by jwt (+) and profile setting (update password, ...)
+
+2. Saidkarim : learning git and explain
+
+3. Jahongir : CRUD with tag-service (+)
+
+4. Suxrob : CRUD with question-service (+)
+
+5. Saidkarim : CRUD with answer-service
+
+6. Jahongir : CRUD with save-question service (+)
+
+7. Suxrob : CRUD with vote-question service
+
+8. Saidkarim : CRUD with comment-service
+
+9. Jahongir : creating new question with tags if tags does not exist create or get it from list
+
+10. Suxrob : attaching files and photos
+
+11. Saidkarim : answering question
+
+12. Jahongir : adding integration tests each services
+
+13. Suxrob : adding Junit tests each services
+
+14. Saidkarim : adding mockito tests each services
+
+15. Jahongir : learning new features (kafka, ....) and explain and managing project in a right way
+
+16. Micorservice part
+
+17.

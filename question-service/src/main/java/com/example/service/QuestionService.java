@@ -1,13 +1,21 @@
 package com.example.service;
 
-import org.springframework.stereotype.Service;
+import com.example.model.dto.question.QuestionAddDTO;
+import com.example.model.dto.question.QuestionEditDTO;
+import com.example.model.dto.question.QuestionResponseDTO;
+import com.example.model.entity.QuestionEntity;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
-@Service
 public interface QuestionService {
 
-    // Hello world
+    QuestionResponseDTO add(QuestionAddDTO questionAddDTO);
 
+    int edit(QuestionEditDTO questionEditDTO);
 
+    int delete(int id);
+
+    List<QuestionResponseDTO> getAll();
+
+    QuestionEntity get(Integer id);
 }
