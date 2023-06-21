@@ -52,7 +52,7 @@ public class CommentServiceImpl implements CommentService {
         if (dto.getCommentTypes().equals(CommentType.ANSWER)) {
             answerService.get(dto.getOwnerId());
         } else {
-            questionService.get(dto.getOwnerId());
+            questionService.getById(dto.getOwnerId());
         }
 
         Optional<CommentEntity> byId = commentRepository.findByIdAndStateIsTrue(commentId);

@@ -3,10 +3,10 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/support-bridge
+    url: jdbc:postgresql://localhost:5432/support_bridge
     username: postgres
-    password: 74809903
-  ##  password: root123
+    password: root123
+
 
   jpa:
     hibernate:

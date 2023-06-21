@@ -1,0 +1,19 @@
+POST localhost:8090/question
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNjg3MzQ1OTEwLCJleHAiOjE2ODc1NjE5MTB9.ahBWLWGddrlXnvUyHFfSDxcf9oGHe5DlE91eqZrNpuc
+Content-Type: application/json
+
+{
+  "title": "Java",
+  "description": "What is Java language ?"
+}
+
+###
+
+GET localhost:8090/question/pub/paging
+Content-Type: application/json
+
+{
+  "page": 1,
+  "size": 5,
+  "sort": "dateAsc"
+}
