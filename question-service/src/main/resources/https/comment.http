@@ -1,0 +1,30 @@
+POST localhost:8080/comment
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "ownerId": 10,
+  "body": "qale zormi",
+  "type": "ANSWER"
+}
+
+###
+
+PUT localhost:8080/comment/2
+Content-Type: application/json
+
+{
+  "ownerId": 3,
+  "body": "alalalla",
+  "commentType": "ANSWER"
+}
+###
+DELETE localhost:8080/comment/1
+
+
+###
+GET localhost:8080/comment/answerList
+Content-Type: application/json
+
+###
+GET localhost:8080/comment/2

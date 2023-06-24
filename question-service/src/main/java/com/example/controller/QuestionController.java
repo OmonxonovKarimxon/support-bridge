@@ -1,71 +1,70 @@
 package com.example.controller;
 
 
-import com.example.model.dto.question.QuestionAddDTO;
-import com.example.model.dto.question.QuestionEditDTO;
-import com.example.model.dto.question.QuestionResponseDTO;
-import com.example.model.dto.user.UserAccountDto;
-import com.example.proxy.AuthProxy;
+import com.example.dto.PagingDto;
+import com.example.dto.QuestionDto;
+import com.example.dto.QuestionParamsDto;
+import com.example.dto.UserAccountDto;
+import com.example.exp.ItemNotFoundException;
+import com.example.form.QuestionForm;
+import com.example.model.entity.QuestionEntity;
 import com.example.service.QuestionService;
-import com.example.service.QuestionServiceImpl;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/question")
 @AllArgsConstructor
 public class QuestionController {
 
-    private final QuestionServiceImpl questionService;
-//    private final QuestionService questionServices;
+    private final QuestionService questionService;
 
+    private void checkHas(Integer questionId, Integer userId) {
+        QuestionEntity question = questionService.get(questionId, userId);
 
-    @PostMapping("/add")
-    public ResponseEntity<QuestionResponseDTO> add(
-            @RequestBody QuestionAddDTO questionAddDTO
-    ) {
-        QuestionResponseDTO responseDTO = questionService.add(questionAddDTO);
+        if (question == null) {
+            throw new ItemNotFoundException("Question not found");
+        }
+    }
+
+    @GetMapping("/pub/paging")
+    public ResponseEntity<PagingDto<QuestionDto>> paging(@RequestBody QuestionParamsDto params) {
+
+        return ResponseEntity.ok().body(questionService.getByParams(params));
+    }
+
+    @PostMapping
+    public ResponseEntity<QuestionDto> add(@RequestBody QuestionForm form, Authentication authentication) {
+        form.setAccount((UserAccountDto) authentication.getDetails());
+
+        QuestionDto responseDTO = questionService.add(form);
         return ResponseEntity.ok().body(responseDTO);
     }
 
-    @PutMapping("/update")
-    public ResponseEntity<?> edit(
-            @RequestBody QuestionEditDTO questionEditDTO
-    ) {
+    @PutMapping("/{question_id}")
+    public ResponseEntity<?> edit(@RequestBody QuestionForm form, @PathVariable Integer question_id, Authentication authentication) {
 
-        int res = questionService.edit(questionEditDTO);
+        form.setAccount((UserAccountDto) authentication.getDetails());
 
-        String message = res == 0 ? "failed" : "success";
+        checkHas(question_id, form.getAccount().getId());
 
-        return ResponseEntity.ok(message);
+        QuestionDto response = questionService.edit(form);
+
+        return ResponseEntity.ok(response);
     }
 
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> delete(
-            @PathVariable("id") int id
-    ) {
+    @DeleteMapping("/{questionId}")
+    public ResponseEntity<?> delete(@PathVariable Integer questionId, Authentication authentication) {
 
-        int res = questionService.delete(id);
+        UserAccountDto account = (UserAccountDto) authentication.getDetails();
 
-        String message = res == 0 ? "failed" : "success";
+        checkHas(questionId, account.getId());
 
-        return ResponseEntity.ok(message);
+        questionService.delete(questionId);
+
+        return ResponseEntity.ok("Deleted");
     }
 
-    @GetMapping("/all")
-    public ResponseEntity<List<QuestionResponseDTO>> getAll() {
-
-        return ResponseEntity.ok().body(questionService.getAll());
-    }
-
-
-    @GetMapping("/profile")
-    public UserAccountDto getCurrentUser(@RequestHeader("Authorization") String authHeader) {
-        return questionService.gett(authHeader);
-    }
 }
