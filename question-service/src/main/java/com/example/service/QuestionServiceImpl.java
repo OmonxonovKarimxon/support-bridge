@@ -1,17 +1,10 @@
 package com.example.service;
 
-<<<<<<< HEAD
-import com.example.model.dto.question.QuestionAddDTO;
-import com.example.model.dto.question.QuestionEditDTO;
-import com.example.model.dto.question.QuestionResponseDTO;
-import com.example.model.dto.user.UserAccountDto;
-=======
 import com.example.dto.PagingDto;
 import com.example.dto.QuestionDto;
 import com.example.dto.QuestionParamsDto;
 import com.example.exp.ItemNotFoundException;
 import com.example.form.QuestionForm;
->>>>>>> origin/coder
 import com.example.model.entity.QuestionEntity;
 import com.example.repository.QuestionRepository;
 import lombok.AllArgsConstructor;
@@ -33,28 +26,6 @@ import static org.springframework.data.jpa.domain.Specification.where;
 public class QuestionServiceImpl implements QuestionService {
 
     private final QuestionRepository questionRepository;
-<<<<<<< HEAD
-    private final AuthProxy authProxy;
-
-    @Override
-    public QuestionResponseDTO add(QuestionAddDTO questionAddDTO) {
-
-        QuestionEntity question = questionRepository.save(QuestionEntity.builder()
-                .ownerId(1)
-                .description(questionAddDTO.getDescription())
-                .title(questionAddDTO.getTitle())
-                .build());
-
-        return QuestionResponseDTO.builder()
-                .id(question.getId())
-                .created_at(question.getCreatedAt())
-                .title(question.getTitle())
-                .ownerId(question.getOwnerId())
-                .description(question.getDescription())
-                .build();
-    }
-=======
->>>>>>> origin/coder
 
     @Override
     public PagingDto<QuestionDto> getByParams(QuestionParamsDto params) {
@@ -63,32 +34,11 @@ public class QuestionServiceImpl implements QuestionService {
 
         Specification<QuestionEntity> notDeleted = (root, cq, cb) -> cb.isFalse(root.get("state"));
 
-<<<<<<< HEAD
-        return questionRepository.deleteByQuestionId(id);
-    }
-
-    @Override
-    public List<QuestionResponseDTO> getAll() {
-
-        List<QuestionEntity> all = questionRepository.getAll();
-        List<QuestionResponseDTO> resList = new ArrayList<>();
-
-        for (QuestionEntity question : all) {
-
-            resList.add(QuestionResponseDTO.builder()
-                    .description(question.getDescription())
-                    .ownerId(question.getOwnerId())
-                    .title(question.getTitle())
-                    .created_at(question.getCreatedAt())
-                    .id(question.getId())
-                    .build());
-=======
         if (params.getSort().equals("dateAsc")) {
             orders.add(Sort.Order.asc("createdAt"));
         }
         if (params.getSort().equals("dateDesc")) {
             orders.add(Sort.Order.desc("createdAt"));
->>>>>>> origin/coder
         }
 
         Specification<QuestionEntity> spec = where(notDeleted);

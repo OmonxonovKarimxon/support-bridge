@@ -20,12 +20,5 @@ Content-Type: application/json
 ###
 
 GET localhost:8090/auth/profile
-<<<<<<< HEAD
-<<<<<<< HEAD
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNjg3MDI0NDc4LCJleHAiOjE2ODcwMjYyNzh9.XSGb2qlxFun4w4tdkEXrTeyXF45jK2i1IK4yjgtB6D0
-=======
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YWxpIiwiaWF0IjoxNjg2MzgxMjIxLCJleHAiOjE2ODY1OTcyMjF9.hn_SIO-MtkRcCtDVjT1aJvh6hczXuGMwfKTeCNgWKwM
->>>>>>> coder
-=======
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNjg3MzQ1OTEwLCJleHAiOjE2ODc1NjE5MTB9.ahBWLWGddrlXnvUyHFfSDxcf9oGHe5DlE91eqZrNpuc
->>>>>>> origin/coder
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNjg3NTkzNjA1LCJleHAiOjE2ODc4MDk2MDV9.Nq3Cad401_Xm5TYM9j_OsVQxB4-ZjENYUNUgPJtKpGg
+

@@ -1,5 +1,4 @@
 server:
-<<<<<<< HEAD
 port: 10000
 
 spring:
@@ -11,20 +10,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
-=======
-  port: 10000
-
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/demo2
-    username: postgres
-    password: root123
-
-  jpa:
-    hibernate:
-      ddl-auto: update
->>>>>>> origin/coder
-    show-sql: true
+      show-sql: true
 
 eureka:
   client:
