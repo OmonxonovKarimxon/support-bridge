@@ -23,6 +23,11 @@ spring:
           predicates:
             - Path=/auth/**
 
+        - id: tag-service
+          uri: lb://tag-service
+          predicates:
+            - Path=/tag/**
+
 eureka:
   client:
     service-url:
