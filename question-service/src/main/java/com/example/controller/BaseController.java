@@ -13,8 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class BaseController {
 
-    @Autowired
-    private QuestionService questionService;
+    private final QuestionService questionService;
+
+    public BaseController(QuestionService questionService) {
+        this.questionService = questionService;
+    }
 
 
     @PostMapping

@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/support_bridge
+    url: jdbc:postgresql://localhost:5432/support-bridge
     username: postgres
-    password: root123
+    password: 5003
 
 
   jpa:
