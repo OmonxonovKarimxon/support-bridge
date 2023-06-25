@@ -30,17 +30,17 @@ private final CommentService commentService;
 
     @PutMapping("/{commentId}")
     public ResponseEntity<String> update(@PathVariable("commentId") Integer commentId,
-                                         @RequestBody CommentForm dto,
+                                         @RequestBody CommentForm form,
                                          Authentication authentication) {
         UserAccountDto details = (UserAccountDto) authentication.getDetails();
-        dto.setAccountDto(details);
+        form.setAccountDto(details);
 
-        String response = commentService.update(dto, commentId);
+        String response = commentService.update(form, commentId);
         return ResponseEntity.ok().body(response);
     }
 
 
-    @GetMapping("/commentlist")
+    @GetMapping("/comment_list")
     public ResponseEntity<?> reportList(@RequestParam(value = "page", defaultValue = "0") int page,
                                         @RequestParam(value = "size", defaultValue = "5") int size) {
 
