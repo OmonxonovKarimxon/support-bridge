@@ -34,15 +34,13 @@ public class CommentServiceImpl implements CommentService {
     public String create(CommentForm dto) {
 
         if (dto.getCommentTypes().equals(CommentType.QUESTION)) {
-
             ResponseEntity<QuestionDto> question = questionProxy.getQuestion(dto.getOwnerId());
-            if(question.getBody()==null){
-                throw new ItemNotFoundException("bunaqa question yoq bizda tvar");
+            if (question.getBody() == null) {
+                throw new ItemNotFoundException("Question not found!");
             }
         } else {
             //            questionProxy.getQuestion(dto.getOwnerId());
         }
-
 
         CommentEntity entity = new CommentEntity();
         entity.setBody(dto.getBody());
@@ -56,21 +54,21 @@ public class CommentServiceImpl implements CommentService {
     }
 
     @Override
-    public String update(CommentForm dto, Integer commentId) {
+    public String update(CommentForm form, Integer commentId) {
 
         //TODO userId ni tekshirish kerak
 
-//        if (dto.getCommentTypes().equals(CommentType.ANSWER)) {
-//            answerService.get(dto.getOwnerId());
+//        if (form.getCommentTypes().equals(CommentType.ANSWER)) {
+//            answerService.get(form.getOwnerId());
 //        } else {
-//           questionService.getById(dto.getOwnerId());
+//           questionService.getById(form.getOwnerId());
 //        }
 
         Optional<CommentEntity> byId = commentRepository.findByIdAndStateIsTrue(commentId);
 
         if (byId.isPresent()) {
             CommentEntity entity = byId.get();
-            entity.setBody(dto.getBody());
+            entity.setBody(form.getBody());
             entity.setUpdatedDate(LocalDateTime.now());
 
             commentRepository.save(entity);
