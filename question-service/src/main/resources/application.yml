@@ -1,10 +1,6 @@
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/support-bridge
-    username: postgres
-    password: 74809903
+  config:
+    import: optional:configserver:http://localhost:8888
 
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+  application:
+    name: question-service

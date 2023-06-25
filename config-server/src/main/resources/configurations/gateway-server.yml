@@ -12,8 +12,11 @@ spring:
           uri: lb://question-service
           predicates:
             - Path=/question/**
-          filters:
-            - AuthenticationFilter
+
+        - id: comment-service
+          uri: lb://comment-service
+          predicates:
+            - Path=/comment/**
 
         - id: auth-server
           uri: lb://auth-server
