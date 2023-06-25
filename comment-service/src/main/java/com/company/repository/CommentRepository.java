@@ -1,8 +1,7 @@
-package com.example.repository;
+package com.company.repository;
 
 
-import com.example.model.entity.AnswerEntity;
-import com.example.model.entity.CommentEntity;
+import com.company.model.entity.CommentEntity;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -22,9 +21,5 @@ public interface CommentRepository extends JpaRepository<CommentEntity, Integer>
     @Query("update CommentEntity comment set comment.state = false where comment.id = ?1")
     Integer deleteByCommentId(int id);
 
-
     Optional<CommentEntity> findByIdAndStateIsTrue(Integer commentId);
 }
-
-
-

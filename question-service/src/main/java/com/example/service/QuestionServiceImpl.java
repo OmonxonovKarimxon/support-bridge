@@ -94,12 +94,12 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     @Override
-    public QuestionEntity getById(Integer questionId) {
+    public QuestionDto getById(Integer questionId) {
         Optional<QuestionEntity> opt = questionRepository.findByIdAndStateIsTrue(questionId);
         if (opt.isEmpty()) {
-            throw new ItemNotFoundException("Something went wrong");
+           return  null;
         }
-        return opt.get();
+        return map(opt.get());
     }
 
 

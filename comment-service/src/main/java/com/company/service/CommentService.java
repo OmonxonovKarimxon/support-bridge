@@ -1,9 +1,8 @@
-package com.example.service;
+package com.company.service;
 
-import com.example.form.CommentForm;
-import com.example.model.dto.comment.CommentCreateDto;
-import com.example.model.dto.comment.CommentDto;
-import com.example.model.dto.comment.CommentUpdateDto;
+
+import com.company.form.CommentForm;
+import com.company.model.CommentDto;
 import org.springframework.data.domain.Page;
 
 public interface CommentService {

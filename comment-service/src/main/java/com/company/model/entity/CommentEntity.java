@@ -1,6 +1,6 @@
-package com.example.model.entity;
+package com.company.model.entity;
 
-import com.example.enums.CommentType;
+import com.company.enums.CommentType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

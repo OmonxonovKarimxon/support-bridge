@@ -66,5 +66,12 @@ public class QuestionController {
 
         return ResponseEntity.ok("Deleted");
     }
+    @GetMapping("/pub/get/{questionId}")
+    public ResponseEntity<?> get( @PathVariable Integer questionId) {
+
+        QuestionDto response = questionService.getById(questionId);
+
+        return ResponseEntity.ok(response);
+    }
 
 }

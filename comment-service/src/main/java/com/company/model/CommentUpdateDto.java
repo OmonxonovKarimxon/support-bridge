@@ -1,7 +1,8 @@
-package com.example.model.dto.comment;
+package com.company.model;
 
-import com.example.enums.CommentType;
-import com.example.model.dto.UserAccountDto;
+import com.company.dto.UserAccountDto;
+import com.company.enums.CommentType;
+
 import lombok.Getter;
 import lombok.Setter;
 

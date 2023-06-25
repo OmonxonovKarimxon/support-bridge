@@ -13,4 +13,5 @@ public interface AuthProxy {
     @GetMapping("/auth/profile")
     ResponseEntity<UserAccountDto> getUserProfile(@RequestHeader(value = "Authorization") String authorizationHeader);
 
+
 }

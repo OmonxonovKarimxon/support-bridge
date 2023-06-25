@@ -1,7 +1,7 @@
-package com.example.form;
+package com.company.form;
 
-import com.example.enums.CommentType;
-import com.example.model.dto.UserAccountDto;
+import com.company.dto.UserAccountDto;
+import com.company.enums.CommentType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

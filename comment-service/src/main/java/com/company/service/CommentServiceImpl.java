@@ -1,23 +1,23 @@
-package com.example.service;
+package com.company.service;
 
 
-import com.example.enums.CommentType;
-import com.example.exp.ItemNotFoundException;
-import com.example.form.CommentForm;
-import com.example.model.dto.comment.CommentCreateDto;
-import com.example.model.dto.comment.CommentDto;
-import com.example.model.dto.comment.CommentUpdateDto;
-import com.example.model.entity.CommentEntity;
-import com.example.repository.CommentRepository;
+import com.company.dto.QuestionDto;
+import com.company.enums.CommentType;
+import com.company.exp.ItemNotFoundException;
+import com.company.form.CommentForm;
+import com.company.model.CommentDto;
+import com.company.model.entity.CommentEntity;
+import com.company.proxy.QuestionProxy;
+import com.company.repository.CommentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -28,11 +28,22 @@ import java.util.stream.Collectors;
 public class CommentServiceImpl implements CommentService {
 
     private final CommentRepository commentRepository;
-    private final AnswerService answerService;
-    private final QuestionService questionService;
+    private final QuestionProxy questionProxy;
 
     @Override
     public String create(CommentForm dto) {
+
+        if (dto.getCommentTypes().equals(CommentType.QUESTION)) {
+
+            ResponseEntity<QuestionDto> question = questionProxy.getQuestion(dto.getOwnerId());
+            if(question.getBody()==null){
+                throw new ItemNotFoundException("bunaqa question yoq bizda tvar");
+            }
+        } else {
+            //            questionProxy.getQuestion(dto.getOwnerId());
+        }
+
+
         CommentEntity entity = new CommentEntity();
         entity.setBody(dto.getBody());
         entity.setUserId(dto.getAccountDto().getId());
@@ -49,11 +60,11 @@ public class CommentServiceImpl implements CommentService {
 
         //TODO userId ni tekshirish kerak
 
-        if (dto.getCommentTypes().equals(CommentType.ANSWER)) {
-            answerService.get(dto.getOwnerId());
-        } else {
-            questionService.getById(dto.getOwnerId());
-        }
+//        if (dto.getCommentTypes().equals(CommentType.ANSWER)) {
+//            answerService.get(dto.getOwnerId());
+//        } else {
+//           questionService.getById(dto.getOwnerId());
+//        }
 
         Optional<CommentEntity> byId = commentRepository.findByIdAndStateIsTrue(commentId);
 

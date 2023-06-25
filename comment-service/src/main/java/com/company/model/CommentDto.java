@@ -1,6 +1,6 @@
-package com.example.model.dto.comment;
+package com.company.model;
 
-import com.example.enums.CommentType;
+import com.company.enums.CommentType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

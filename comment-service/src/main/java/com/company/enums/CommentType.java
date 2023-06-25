@@ -1,4 +1,4 @@
-package com.example.enums;
+package com.company.enums;
 
 public enum CommentType {
     ANSWER,
