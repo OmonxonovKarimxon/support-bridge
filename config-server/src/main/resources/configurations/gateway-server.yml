@@ -18,6 +18,11 @@ spring:
           predicates:
             - Path=/comment/**
 
+        - id: profile-service
+          uri: lb://profile-service
+          predicates:
+            - Path=/profile/**
+
         - id: auth-server
           uri: lb://auth-server
           predicates:

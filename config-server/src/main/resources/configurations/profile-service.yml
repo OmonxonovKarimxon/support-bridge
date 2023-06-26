@@ -1,9 +1,9 @@
 server:
-  port: 10000
+  port: 11000
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/support_bridge
+    url: jdbc:postgresql://localhost:5432/support-bridge
     username: postgres
     password: root123
 

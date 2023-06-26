@@ -32,7 +32,7 @@ public class QuestionServiceImpl implements QuestionService {
 
         List<Sort.Order> orders = new ArrayList<>();
 
-        Specification<QuestionEntity> notDeleted = (root, cq, cb) -> cb.isFalse(root.get("state"));
+        Specification<QuestionEntity> notDeleted = (root, cq, cb) -> cb.isTrue(root.get("state"));
 
         if (params.getSort().equals("dateAsc")) {
             orders.add(Sort.Order.asc("createdAt"));
