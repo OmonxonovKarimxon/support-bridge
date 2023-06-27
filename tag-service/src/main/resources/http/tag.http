@@ -1,0 +1,33 @@
+POST http://localhost:8090/tag
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNjg3ODQxNzI1LCJleHAiOjE2ODgwNTc3MjV9.hfLdWDn0jPnRljlhQeYIG9AcQRZNZ4tFYDFyKFN7HLQ
+Content-Type: application/json
+
+{
+  "name" : "go"
+}
+
+###
+
+PUT http://localhost:8090/tag
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNjg3ODQxNzI1LCJleHAiOjE2ODgwNTc3MjV9.hfLdWDn0jPnRljlhQeYIG9AcQRZNZ4tFYDFyKFN7HLQ
+Content-Type: application/json
+
+{
+  "name": "python",
+  "oldTagId": 1
+}
+
+###
+
+DELETE http://localhost:8090/tag/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNjg3ODQxNzI1LCJleHAiOjE2ODgwNTc3MjV9.hfLdWDn0jPnRljlhQeYIG9AcQRZNZ4tFYDFyKFN7HLQ
+
+###
+
+GET http://localhost:8090/tag/pub/go
+Content-Type: application/json
+
+###
+
+GET http://localhost:8090/tag/pub/list
+Content-Type: application/json

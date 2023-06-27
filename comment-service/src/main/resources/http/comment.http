@@ -1,9 +1,9 @@
 POST localhost:8090/comment
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNjg3NzE3NDc0LCJleHAiOjE2ODc5MzM0NzR9.7lBb4MZhqfBOpHJodchJizm6OURF7FBAQWCqxGlDtqU
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huIiwiaWF0IjoxNjg3ODAzNzQwLCJleHAiOjE2ODgwMTk3NDB9.iGNo1BAXiFjoKQJE9BdYqldZ5YLYRNQ4PLGqJ2x8tN4
 Content-Type: application/json
 
 {
-  "ownerId": 2,
+  "ownerId": 1,
   "body": "hello World",
   "commentTypes": "QUESTION"
 }

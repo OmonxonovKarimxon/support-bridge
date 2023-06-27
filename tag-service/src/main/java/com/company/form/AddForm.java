@@ -1,5 +1,6 @@
-package com.example.model.dto.tag;
+package com.company.form;
 
+import com.company.dto.UserAccountDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,7 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class TagRequestDTO {
+public class AddForm {
 
     private String name;
+    private UserAccountDto accountDto;
 }

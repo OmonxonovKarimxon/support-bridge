@@ -1,6 +1,6 @@
-package com.example.repository;
+package com.company.repository;
 
-import com.example.model.entity.TagEntity;
+import com.company.entity.TagEntity;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -20,12 +20,12 @@ public interface TagRepository extends JpaRepository<TagEntity, Integer> {
 
     @Transactional
     @Modifying
-    @Query("update TagEntity tag set tag.state = false where tag.id = ?1")
-    Integer deleteTagById(int id);
+    @Query("update TagEntity tag set tag.state = false, tag.updatedBy = ?1 where tag.id = ?2")
+    Integer deleteTagById(int updater, int id);
 
 
     @Transactional
     @Modifying
-    @Query("update TagEntity tag set tag.name = ?1 where tag.id = ?2 and tag.state = true")
-    Integer editTagById(String name, int id);
+    @Query("update TagEntity tag set tag.name = ?1, tag.updatedBy=?2 where tag.id = ?3 and tag.state = true")
+    Integer editTagById(String name, int updater, int id);
 }

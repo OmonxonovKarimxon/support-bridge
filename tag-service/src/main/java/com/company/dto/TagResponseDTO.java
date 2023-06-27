@@ -1,4 +1,4 @@
-package com.example.model.dto.tag;
+package com.company.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,4 +13,5 @@ public class TagResponseDTO {
 
     private String name;
     private int id;
+    private int createdBy;
 }

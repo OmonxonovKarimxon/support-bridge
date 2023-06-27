@@ -1,11 +1,12 @@
-package com.example.service;
+package com.company.service;
 
-import com.example.exp.BadRequestException;
-import com.example.model.dto.tag.EditTagRequestDTO;
-import com.example.model.dto.tag.TagRequestDTO;
-import com.example.model.dto.tag.TagResponseDTO;
-import com.example.model.entity.TagEntity;
-import com.example.repository.TagRepository;
+import com.company.dto.TagResponseDTO;
+import com.company.entity.TagEntity;
+import com.company.exp.BadRequestException;
+import com.company.exp.ItemNotFoundException;
+import com.company.form.AddForm;
+import com.company.form.EditForm;
+import com.company.repository.TagRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -19,39 +20,51 @@ public class TagServiceImpl implements TagService {
     private final TagRepository tagRepository;
 
     @Override
-    public TagResponseDTO add(TagRequestDTO addTagRequestDTO) {
+    public TagResponseDTO add(AddForm addForm) {
 
-        TagEntity byName = tagRepository.findByName(addTagRequestDTO.getName());
+        TagEntity byName = tagRepository.findByName(addForm.getName());
 
         if (byName != null) {
             throw new BadRequestException("Tag is already exists");
         }
         TagEntity tag = tagRepository.save(
                 TagEntity.builder()
-                        .name(addTagRequestDTO.getName())
+                        .name(addForm.getName())
+                        .createdBy(addForm.getAccountDto().getId())
                         .build()
         );
         return TagResponseDTO.builder()
                 .id(tag.getId())
                 .name(tag.getName())
+                .createdBy(tag.getCreatedBy())
                 .build();
     }
 
     @Override
-    public Integer edit(EditTagRequestDTO editTagRequestDTO) {
+    public String edit(EditForm editForm) {
 
-        TagEntity byName = tagRepository.findByName(editTagRequestDTO.getName());
+        TagEntity byName = tagRepository.findByName(editForm.getName());
 
         if (byName != null) {
             throw new BadRequestException("Tag is already exists");
         }
+        Integer result = tagRepository.editTagById(editForm.getName(), editForm.getUserAccountDto().getId(), editForm.getOldTagId());
+        if (result > 0) {
 
-        return tagRepository.editTagById(editTagRequestDTO.getName(), editTagRequestDTO.getOldTagId());
+            return "success";
+        }
+
+        return "failed";
     }
 
     @Override
-    public Integer delete(int tagId) {
-        return tagRepository.deleteTagById(tagId);
+    public String delete(int userId, int tagId) {
+        Integer result = tagRepository.deleteTagById(userId, tagId);
+
+        if (result > 0)
+            return "success";
+
+        return "failed";
     }
 
     @Override
@@ -65,6 +78,7 @@ public class TagServiceImpl implements TagService {
             TagResponseDTO responseDTO = TagResponseDTO.builder()
                     .id(tag.getId())
                     .name(tag.getName())
+                    .createdBy(tag.getCreatedBy())
                     .build();
 
             responseDTOList.add(responseDTO);
@@ -78,6 +92,9 @@ public class TagServiceImpl implements TagService {
 
         TagEntity byName = tagRepository.findByName(name);
 
+        if (byName == null) {
+            throw new ItemNotFoundException("tag is not exists");
+        }
 
         return TagResponseDTO.builder().id(byName.getId()).name(byName.getName()).build();
     }
